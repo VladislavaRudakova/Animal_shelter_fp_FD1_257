@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/animal_shelter_pet_info_style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_buttons_style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_header_footer_style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_menu_style.css">
+    <link rel="stylesheet" href="styles/chapter_title_style.css">
+    <link rel="stylesheet" href="styles/pet-slider-style.css">
+    <link rel="stylesheet" href="styles/pet_info_modal_style.css">
+    <title>Document</title>
+</head>
+<body>    
+    <div id="back"></div>
+<icon-sprite></icon-sprite>
+    <illustration-sprite></illustration-sprite>
+    <div id="modal">
+        <div id="modal-message">
+            <div id="modal-close"><custom-icon name="close"></custom-icon></div>
+            <div id="modal-title">где поделиться?</div>
+            <div id="modal-social">
+                
+                <div id="modal-social-icons">
+                    <div class="modal-social-icons" id="inst-modal"><custom-icon name="inst"></custom-icon></div>
+                    <div class="modal-social-icons" id="tg-modal" ><custom-icon name="telegram"></custom-icon></div>
+                    <div class="modal-social-icons" id="vk-modal"><custom-icon name="vkontakte"></custom-icon></div>
+                    <div class="modal-social-icons" id="facebook-modal"><custom-icon name="facebook"></custom-icon></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <custom-header></custom-header> 
+    
+    <!--<button id="home-button"><a href="animal_shelter_start_page.html"><img src="home1.svg"></a></button>-->
+    <div id="main">
+        <div id="main-first-block">
+            <div class="pet-info">
+                <div>
+                    <div class="main-info-block">
+                        <div id="main-photo-cont"></div> <!--содержимое загружается js (pet-info-script)--> 
+                        <div class="info">
+
+                            <div class="name-block">
+                                <div id="pet-name"></div>
+                            </div>
+                            <div id="pet-features">
+                                <div class="pet-features-cont">
+                                    <div class="pet-features">пол<div class="value">женский</div></div>
+                                    <div class="pet-features" id="pet-age"><div class="value"></div></div>
+                                </div>
+                                <div class="pet-features-cont">
+                                    <div class="pet-features" id="pet-character">                   
+                                        <div class="value"></div>  <!--содержимое загружается js (pet-info-script)-->                  
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="pet-info-text"></div> <!--текст загружается js (pet-info-script)-->
+                                                    
+                            <div id="pet-info-buttons">
+                                <input class="pet-info-help-button" type="button" value="забрать домой">
+                                <input class="pet-info-help-button" type="button" value="помочь">
+                                <button class="share-button"><div id="share-button"><custom-icon name="share"></custom-icon></div></button>
+                            </div>
+                        
+                        </div> <!--/info-->
+
+                    </div><!--/main-info-block-->
+
+                        <div class="pet-info-message">
+                            <div>Друзья, напоминаем, что передача питомца осуществляется с заключением договора, пунктом которого
+                                является отслеживание судьбы животного 
+                                <a href="">смотреть договор</a>
+                            </div>                     
+                        </div>                    
+                </div>
+            
+            <div class="pet-info-zoopsy"> Если вы берете питомца из приюта, консультация зоопсихолога в период адаптации бесплатная!
+                        <input class="pet-info-help-button" type="button" value="записаться">
+                </div>
+    </div><!--/pet-info--> 
+
+        <div class="articles">
+            <a href="" class="article">
+                <div class="article-photo">
+                    <img class="article-photo" src="images/dressirovka.jpg">  
+                </div>
+                <div class="article-caption"><div>поддается ли кошка дрессировке?</div></div>
+            </a> 
+            
+            <a href="" class="article">
+                <div class="article-photo">
+                    <img class="article-photo" src="images/grooming.jpg">  
+                </div>
+                <div class="article-caption"><div>поддается ли кошка дрессировке?</div></div>
+            </a> 
+
+            <a href="" class="article">
+                <div class="article-photo">
+                    <img class="article-photo" src="images/doverie.jpg">  
+                </div>
+                <div class="article-caption"><div>как вернуть доверие собаки?</div></div>
+            </a> 
+
+            <a href="" class="article">
+                <div class="article-photo">
+                    <img class="article-photo" src="grooming.jpg">  
+                </div>
+                <div class="article-caption"><div>поддается ли кошка дрессировке?</div></div>
+            </a>
+        </div>
+
+       </div>
+
+        
+
+
+         
+
+    <div class="pets-slider-container" id="main-page-slider">
+        <button class="slider-buttons" id="slider-button-left"><div><custom-icon name="arrow-left"></custom-icon></div></button>
+        <div id="pets-slider">
+            <div class="pets-for-adoption" id="slider-content"> 
+              
+            </div>
+        </div>
+        <button class="slider-buttons" id="slider-button-right"><div><custom-icon name="arrow-right"></custom-icon></div></button>
+    </div>
+
+
+
+
+
+    </div>
+    <footer></footer>
+    <script src="script/component/illustration_sprite.js"></script>
+    <script src="script/component/illustration.js"></script>
+    <script src="script/component/icon_sprite.js"></script>
+    <script src="script/component/icon.js"></script>
+    <script src="script/component/menu-component.js"></script>
+    <script src="script/component/header_component.js"></script>
+    <script src="script/component/footer_component.js"></script>
+    
+    <script src="script/data/Pet.js"></script>
+    <script src="script/data/data.js"></script>
+    <script src="script/data/pets.js"></script>
+    <script src="script/data/pet_features_colors.js"></script>
+    
+    
+
+    <script src="script/menu_script.js"></script>
+    
+   
+    <script src="script/find_all_pets.js"></script>    
+    <script src="script/slider_script_1.js"></script>
+    <script src="script/get_id_name.js"></script>    
+
+    <script src="script/pet_info_script.js"></script>
+    <script src="script/photo_replace_script.js"></script>
+    <script src="script/pet_info_equalize_containers.js"></script>
+    <script src="script/modal_script.js"></script>
+
+
+
+
+    
+   
+    
+    
+    
+    
+   
+</body>
+</html>

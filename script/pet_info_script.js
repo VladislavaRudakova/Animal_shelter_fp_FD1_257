@@ -1,0 +1,61 @@
+
+const petInfo = document.getElementById('pet-info-text');
+const petNameCont = document.getElementById('pet-name');
+const petAge = document.getElementById('pet-age');
+const petCharacter = document.getElementById('pet-character');
+const characterValue = petCharacter.querySelector('.value');
+const photoContainer = document.getElementById('main-photo-cont');
+
+console.log('PETS LOADED'+pets)
+
+
+var petDataString = localStorage.getItem('petData');
+console.log(petDataString + 'PET DATA')
+
+var petData='';
+if(petDataString) {
+ petData = JSON.parse(petDataString);
+    
+console.log(petDataString + 'PET DATA')
+}
+
+console.log(petData + 'PET DATA OBJECT')
+
+console.log(petData.petId + petData.petName+'PET DATA PARAMETERS')
+
+var petId=petData.petId;
+var petName1 = petData.petName;
+//localStorage.clear();
+
+
+function showPetInfo(id, name, pets) {
+    console.log ('SHOW PET INFO START!')
+    console.log (id + name + 'ARGUMENTS!')
+    pets.forEach (pet=> {
+        if(pet.id===id&&pet.name===name) {
+        petNameCont.textContent=pet.name;
+        console.log (pet.id + pet.name + 'PET FOUND!')
+        petAge.innerHTML=`возраст<div class="value">${pet.age.toString()}&nbsp;лет`;
+    var petCharacterValues='';
+    pet.character.forEach(value=>{
+    petCharacterValues+=`<div class="value" style="background-color:${colors.get(value)}">${value}</div>`;    
+    })
+    petCharacter.innerHTML='<div>характер</div><div id=character-cont>'+ petCharacterValues+'</div>';
+    petInfo.innerHTML=pet.textInfo;
+
+    showPetPhoto(pet.accPhotos);
+        }
+    })
+}
+
+function showPetPhoto(photos) {
+    var photoContent='';
+    photos.forEach(photo=>{
+    photoContent+=`<img src="${photo}">`;
+})
+    photoContainer.innerHTML=photoContent;
+}
+
+
+showPetInfo(petId, petName1, pets);
+

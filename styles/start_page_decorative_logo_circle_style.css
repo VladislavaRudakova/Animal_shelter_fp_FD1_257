@@ -1,0 +1,769 @@
+
+
+div.circle {
+    width: 100%;   
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;     
+    display: flex;
+    justify-content: end;
+    transition: 0.7s;
+    overflow: hidden;
+     pointer-events: none;
+}
+
+
+div#circle {
+    width: 700px;
+    height: 700px;
+    background-color: rgb(255, 255, 255, 0.5);
+    top: -90px;
+    right: -40px;
+    position: relative;    
+    z-index: 3;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.7);
+    transition: 0.7s;     
+}
+
+div#circle-content {
+    position: absolute;    
+    z-index: 3;
+    top: 320px;
+    right: 70px;
+    transition: 0.7s;  
+}
+
+#find-friend-img {      /*надпись "помогаем найти друга"*/
+    position: absolute;
+    top: -120px;
+    right: 30px;
+    transform: rotate(15deg);
+    width: 350px;
+    height: 554/105;
+}
+
+div#cat-paw-block {
+    display: flex;
+}
+
+div.logo-image-cat {
+    position: absolute;
+    right: 300px;
+    top: -60px;
+    width: 100px;
+    height: 50px;
+}
+
+div.logo-image-paw-left {
+    position: absolute;
+    left: -100px;
+    top: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+div.logo-image-paw-right {
+   position: absolute;
+    right: 150px;
+    top: 100px;
+    width: 100px;
+    aspect-ratio: 100/50;
+    transform: rotate(70deg);    
+}
+
+div.logo-image-paw custom-illustration {   
+    color: #762D00;
+}
+
+div.logo-image-cat custom-illustration {
+    color: rgb(118, 45, 0, 0.7);
+}
+
+div#logo-text{
+    position: relative;
+    right: -60px;
+    top: 10px;
+    color: rgb(118, 45, 0, 0.7);
+    font-size: 350%;
+    text-transform: uppercase;   
+    font-weight: 600;
+    
+}
+
+div#logo-text span {
+    white-space: nowrap;
+}
+
+div.main-text {
+    position: relative;
+    right: 0px;
+    color: rgb(118, 45, 0, 0.9);   
+    font-size: 120%;    
+    text-transform: uppercase;
+    margin-top: 20px;
+    white-space: pre-line;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px white;
+    border-radius: 35px;
+    padding: 0 30px 0 30px;   
+}
+
+div.buttons-block {  
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px 0 0;    
+}
+
+a.main-buttons {
+    pointer-events: auto;
+}
+
+
+a.main-buttons {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1em 2em 1em 2em;
+    margin: 0 5px 0 20px;    
+    border: solid 1px rgb(118, 45, 0, 0.5);
+    border: none;
+    border-radius: 8px;   
+    background-color: rgb(255, 255, 255);
+    color: rgba(177, 86, 63, 1);
+    font-size: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: auto;
+    transition: 0.1s;    
+}
+
+a.main-buttons:first-child {
+    
+    outline: solid 4px rgb(190, 75, 21);
+    border: none;
+    outline: none;   
+    text-transform: uppercase;
+    height: auto;    
+}
+
+a.main-buttons:last-child {
+    
+    border: solid 1px rgb(118, 45, 0, 0.5);
+    border: none;   
+    background-color: rgb(187, 106, 85);
+    color: rgb(255, 255, 255);   
+    text-transform: uppercase;
+    height: auto;    
+}
+
+a.main-buttons:hover {
+    cursor: pointer;    
+    outline: solid 4px rgb(206, 128, 80);
+    outline: none;   
+    background-color: rgba(202, 153, 140, 1);
+    color: rgb(255, 255, 255);   
+}
+
+
+
+/*-----------------------------------------------------media*/
+
+@media all and (max-width: 1700px) {
+  
+
+    div#circle {   
+        transform: translateX(20px);
+    }
+
+
+    div#circle-content {   
+        top: 320px;
+        right: 70px;    
+    }
+
+    div#logo-text{   
+        font-size: 350%;   
+    }
+
+    div.main-text {   
+        font-size: 120%; 
+       
+    }
+
+    div.buttons-block {
+        right: 50px;                
+        margin: 10px 10px 0 0; 
+    }
+
+    button.buttons-main-image#left-button {
+        left: 0px;
+        z-index: 1;
+    }
+
+    button.buttons-main-image#right-button {
+        right: 0px;
+    }
+
+}
+
+@media all and (max-width: 1600px) {
+   
+    div#circle { 
+        transform: translateX(100px);
+    }
+
+    div#circle-content {   
+        right: 130px;   
+    }
+
+    div#logo-text {
+        font-size: 300%;
+        right: 100px;   
+    }
+
+    div.logo-image-paw-left {    
+        right: 350px;
+        top: 10px;
+        width: 100px;
+        height: 50px;
+    }
+
+    div.main-text {   
+        font-size: 110%;
+        right: 100px;   
+    }
+
+    div.buttons-block {
+        right: 40px;                
+   
+    }
+    
+}
+
+
+@media all and (max-width: 1500px) {
+  
+
+    div#circle {      
+        transform: translateX(110px);
+    }
+        
+    a.main-buttons {   
+        padding: 1em 2em 1em 2em;
+        margin: 0 3px 0 10px;
+        font-size: 115%;    
+    }
+
+}
+
+
+@media all and (max-width: 1400px) {
+
+    div#circle {   
+        transform: translate(140px, -20px);
+    }
+
+    div#logo-text {  
+        font-size: 280%;     
+    }
+
+    div.main-text {   
+        font-size: 110%;
+    }
+   
+    a.main-buttons {   
+        padding: 1em 2em 1em 2em;
+        margin: 0 3px 0 10px;
+        font-size: 110%;    
+    }
+
+    #find-friend-img {      
+        top: -110px;
+        right: 50px;
+        transform: rotate(15deg);
+        width: 320px;
+        aspect-ratio: 554/105;
+    }
+
+}
+
+@media all and (max-width: 1370px) {
+
+    div#circle {   
+        transform: translate(140px, -30px);
+    }
+
+    
+}
+
+
+@media all and (max-width: 1300px) {
+    
+
+    div#circle-content {   
+        top: 330px;
+        right: 170px;        
+    }
+    
+    div#circle {    
+       transform: translate(170px, -20px);    
+    }
+ 
+    div#logo-text { 
+        font-size: 270%;     
+    }
+
+    div.main-text {       
+        font-size: 100%;
+    }
+
+    input.main-buttons {   
+        padding: 1em 2em 1em 2em;
+        margin: 0 3px 0 10px;
+        font-size: 100%;    
+    }
+     
+
+    #find-friend-img {      
+        top: -110px;
+        right: 50px;
+        transform: rotate(15deg);
+        width: 320px;
+        aspect-ratio: 554/105;
+    }
+
+
+    div.logo-image-cat {       
+        right: 280px;
+        top: -60px;
+        width: 100px;
+        height: 50px;
+    }
+
+
+    div.logo-image-paw-left {    
+        right: 320px;
+        top: 10px;
+        width: 100px;
+        height: 50px;
+    }
+
+    div.logo-image-paw-right {    
+        right: 130px;
+        top: 80px;
+        width: 100px;
+        aspect-ratio: 100/50;
+        transform: rotate(70deg);
+        
+    }
+
+}
+
+
+
+@media all and (max-width: 1200px) {
+  
+    div#circle {        
+        width: 670px;
+        height: 670px;
+        border-top-left-radius: 335px;
+        border-bottom-left-radius: 335px;
+       
+    }
+        
+    a.main-buttons {   
+        padding: 1em 2em 1em 2em;
+        margin: 0 3px 0 10px;
+        font-size: 90%;    
+    }
+
+
+    div#logo-text {       
+        font-size: 250%;     
+    }
+
+    div.main-text {        
+        font-size: 90%;
+    }
+
+    div.logo-image-paw-left {    
+        right: 290px;
+        top: 10px;
+        width: 100px;
+        height: 50px;
+    }
+
+}
+
+@media all and (max-width: 1100px) {
+
+     div#circle {    
+       transform: translate(170px, -50px);    
+    }
+
+    div#circle-content {   
+        top: 350px;
+        right: 170px;        
+    }
+
+    #find-friend-img {      
+       
+        width: 280px;
+       
+    }
+  
+   
+}
+
+
+@media all and (max-width: 1000px) {/*-------------------------------------------*/
+
+   
+    div#circle-content {
+        position:static; 
+        display: flex;
+        flex-direction: row;   
+    }
+
+    div.circle {
+        top: 50px;
+        overflow: visible;  
+    }
+
+    div#circle {
+        position: static;    
+        transform: translate(0);
+        width: 100%;
+        height: auto;
+        /*display: flex;*/
+        flex-direction: row;
+        padding-bottom: 20px;   
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        transition: 0.7s;
+        background-color: rgb(255, 255, 255, 0.8);          
+    }
+
+    div#text-buttons-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    div#logo-text {    
+        position: static;
+        flex: 300px 0 1;
+        font-size: 300%;
+        padding: 20px;
+        padding-right: 0;   
+        margin-left: 20px;    
+    }
+
+    div.main-text {
+        position: static;
+        font-size: 130%;
+        padding: 0px 20px 0 20px;    
+    }
+
+    #find-friend-img {   
+        top: 15px;
+        right: 30px;
+        transform: rotate(10deg);
+        width: 310px;
+        height: 554/105;
+    }
+
+
+    #cat-paw-block {
+       position: relative;
+       top: 20px;
+    }
+
+    div.logo-image-cat {
+        position: static;        
+        width: 100px;
+        height: 50px;
+    }
+
+    div.logo-image-paw-left {
+        position: static;
+        display: inline-block;        
+        width: 100px;
+        height: 50px;   
+    }
+
+    div.logo-image-paw-right {
+        position: relative;   
+        right: 0px;
+        top: 15px;
+        width: 100px;
+        aspect-ratio: 100/50;
+        transform: rotate(70deg);    
+    }
+
+    div.buttons-block {
+        position: static;        
+        margin: 0px 10px 0 10px;        
+    }
+
+    div.buttons-block input {
+       margin: 0 3px 0 3px;      
+    }
+  
+        
+}
+
+
+@media all and (max-width: 900px) { 
+
+    div.main-text {  
+        
+        font-size: 110%;        
+        transition: 0.2s;
+    }
+   
+    div.buttons-block {
+        margin-top: 0;       
+    }
+ 
+}
+
+
+@media all and (max-width: 870px) {
+ 
+    div.main-text {
+        margin-top: 20px;
+        font-size: 110%;
+    }
+
+    #find-friend-img {
+        opacity: 0;
+        transition: 0.1s;
+    }
+
+    div.buttons-block {
+        margin-top: 0;       
+    }
+
+}
+
+
+
+@media all and (max-width: 850px) {
+   
+    div.main-text {
+        margin-top: 20px;
+        font-size: 110%;
+    }
+
+    #find-friend-img {
+        opacity: 0;
+        transition: 0.1s;
+    }
+
+    div.buttons-block {
+        margin-top: 0;       
+    }
+
+}
+
+
+
+@media all and (max-width: 830px) { 
+    
+    div#logo-text {  
+        flex: 270px 0 1;
+        font-size: 270%;
+        padding: 20px;
+        padding-right: 0;   
+        margin-left: 20px;    
+    }
+        
+        
+    div.main-text {
+        margin-top: 20px;
+        font-size: 100%;
+    }
+
+
+    div.logo-image-cat {            
+        right: 380px;
+        top: 0px;
+        width: 100px;
+        height: 50px;
+    }
+
+
+    div.logo-image-paw-left {    
+        right: 605px;
+        top: 90px;
+        width: 40px;
+        height: 50px;
+        margin-left: 20px;   
+    }
+
+    div.logo-image-paw-right {    
+        right: 0px;
+        top: 15px;
+        width: 40px;
+        aspect-ratio: 100/50;
+        margin-left: 20px;
+        transform: rotate(70deg);    
+    }
+
+    div.buttons-block input{
+        font-size: 80%;    
+    }
+
+}
+
+
+@media all and (max-width: 700px) {
+
+    div.main-text {  
+        font-size: 100%;
+        margin: 10px;
+        padding: 0 0 0 20px;
+    }
+    div.buttons-block {
+        justify-content: space-between;         
+    }
+
+    div.buttons-block a{        
+        flex: auto;    
+    }
+       
+}
+
+
+@media all and (max-width: 550px) {
+
+        div#logo-text {    
+        flex: 270px 0 1;
+        font-size: 230%;
+        padding: 20px;
+        padding-right: 0;   
+        margin-left: 15px;    
+    }
+
+    div.main-text {  
+        font-size: 80%;
+        padding-right: 10px;
+    }
+  
+}
+
+
+@media all and (max-width: 500px) {
+
+     div#logo-text {    
+      
+        font-size: 210%;
+        padding: 15px;
+        padding-right: 0;   
+        margin-left: 15px;    
+    }
+      
+
+    div.main-text {  
+        font-size: 80%;
+        padding-right: 10px;
+    }
+  
+}
+
+
+
+@media all and (max-width: 450px) {
+
+    div#logo-text {    
+        display: none;   
+    }
+
+    div.logo-image-cat {            
+        display: none;
+    }
+    
+    div.logo-image-paw-right {    
+        display: none;  
+    }
+
+    div.main-text {  
+        font-size: 80%;
+        margin-top: 0;
+        margin-right: 0;        
+    }
+
+    div.buttons-block {
+        flex-direction: column;
+        gap: 10px;    
+    }
+ 
+}
+
+
+@media all and (max-width: 400px) {
+
+    div#logo-text {    
+        display: none;   
+    }
+
+    div.main-text {  
+        font-size: 90%;        
+    }
+
+    div.buttons-block {
+        flex-direction: column;    
+    }
+
+    div.logo-image-cat {            
+        right: 380px;
+        top: 0px;
+        width: 100px;
+        height: 50px;
+    }
+
+    div.logo-image-paw-left {    
+        right: 605px;
+        top: 90px;
+        width: 40px;
+        height: 50px;
+        margin-left: 20px;   
+    }
+
+    div.logo-image-paw-right {    
+        right: 0px;
+        top: 15px;
+        width: 40px;
+        aspect-ratio: 100/50;
+        margin-left: 20px;
+        transform: rotate(70deg);    
+    }
+
+    div.buttons-block a {
+        font-size: 80%;    
+    }
+  
+}
+
+
+@media all and (max-width: 300px) {
+
+    div#logo-text {    
+        display: none;   
+    }
+
+    div.main-text {  
+        font-size: 70%;        
+    }
+   
+    div.buttons-block a{
+        font-size: 70%;    
+    }
+
+}

@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+}
+
+custom-header#start-page-header header {
+    position: absolute;
+    z-index: 3;
+}
+
+div#menu{
+    top: 23px;
+}
+
+div.top-block {   
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+button.buttons-main-image {
+    position: absolute;
+}
+
+button.buttons-main-image#left-button {
+    left: -42px;
+}
+
+button.buttons-main-image#right-button {
+    right: -42px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+
+/*-----------------------------------------------------------------main*/
+
+#main-background {
+    max-width: 1572px;
+    aspect-ratio: 2.5/1;
+    overflow: hidden;     
+}
+
+#main-background img{     
+      width: 100%;     
+}
+
+input.main-buttons {
+    box-sizing: border-box;
+    padding: 1em 2em 1em 2em;
+    margin: 0 5px 0 20px;    
+    border: solid 1px rgb(118, 45, 0, 0.5);
+    border: none;
+    border-radius: 8px;   
+    background-color: rgb(255, 255, 255);
+    color: rgb(118, 45, 0);
+    font-size: 120%;
+    text-transform: uppercase;
+    height: auto;    
+}
+
+input.main-buttons:hover {
+    
+    outline: solid 4px rgb(206, 128, 80);
+    outline: none;   
+    background-color: rgb(185, 119, 93);
+    color: rgb(255, 255, 255);
+   
+}
+
+
+
+
+/*-----------------------------------------------------media*/
+
+@media all and (max-width: 1700px) {
+      
+    #main-background img{ 
+        width: 105%;
+        transform: translateX(-50px);   
+    }
+
+    button.buttons-main-image#left-button {
+        left: 0px;
+        z-index: 1;
+    }
+
+    button.buttons-main-image#right-button {
+        right: 0px;
+    }
+
+}
+
+
+@media all and (max-width: 1500px) {
+
+    #main-background {    
+    aspect-ratio: 2.3/1;
+    }
+        
+    #main-background img{  
+        width: 110%;
+        transform: translate(-90px, 20px);
+    }
+
+}
+
+
+
+@media all and (max-width: 1300px) {
+
+
+    #main-background img{  
+        width: 110%;
+        transform: translate(-90px, 0px);
+    }
+
+    
+    #main-background { 
+        background-size: 120%;
+        background-position: -150px 40px;
+    }
+ 
+
+    button.buttons-main-image#left-button, button.buttons-main-image#right-button {
+        display: none;
+    }
+
+}
+
+
+@media all and (max-width: 1000px) {/*-------------------------------------------*/
+
+    div.top-block {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #main-background {
+        aspect-ratio: 1.8/1;
+       
+    }
+
+    #main-background img {
+        width: 100%;
+        transform: translateY(140px);
+    }
+
+    header.sub-header {
+        display: none;
+    }
+           
+}
+
+
+@media all and (max-width: 700px) {
+   
+
+    picture#main-background {        
+        width: 100%;        
+        display: block;              
+       aspect-ratio: 300/300;            
+    }
+
+    #main-background img {
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+       object-position:0 -270px;
+       display: block; 
+       transform: translate(0, 0);        
+    }
+    
+}
+
+
+@media all and (max-width: 600px) {
+
+    picture#main-background {
+        aspect-ratio: 300/350;            
+    }
+
+    #main-background img {       
+       object-position:0 -240px;         
+    }
+    
+}
+
+
+@media all and (max-width: 550px) {
+
+
+    picture#main-background {
+       aspect-ratio: 300/370;            
+    }
+
+    #main-background img {       
+       object-position:0 -120px;         
+    }
+
+}
+
+
+@media all and (max-width: 450px) {
+   
+
+    picture#main-background {       
+        aspect-ratio: 300/380;            
+    }
+
+    #main-background img {       
+       object-position:0 -100px;         
+    }
+
+}
+
+
+@media all and (max-width: 400px) {
+   
+
+    picture#main-background {       
+        aspect-ratio: 300/380;            
+    }
+
+    #main-background img {       
+       object-position:0 -80px;         
+    }
+
+}
+
+
+@media all and (max-width: 380px) {
+
+   
+    picture#main-background {       
+        aspect-ratio: 300/420;            
+    }
+
+    #main-background img {       
+       object-position:0 -30px;         
+    }
+
+}
+

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/animal_shelter_start_page_style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_header_footer_style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_menu_style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_buttons_style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_take_friend_chapter.css">
+    <link rel="stylesheet" href="styles/start_page_decorative_logo_circle_style.css">
+    <link rel="stylesheet" href="styles/start_page_pet_miniatures_style.css"> 
+    <link rel="stylesheet" href="styles/start-page-illustration-block-style.css">
+    <link rel="stylesheet" href="styles/chapter_title_style.css">
+    <link rel="stylesheet" href="styles/pet-slider-style.css">
+    <link rel="stylesheet" href="styles/animal_shelter_articles_start_page.css">
+    
+    <title>Cat&Dog</title>
+</head>
+<body>
+    
+    <div id="back"></div>
+    <div class="wrapper" id="wrapper">
+    <icon-sprite></icon-sprite>
+    <custom-header id="start-page-header"></custom-header> 
+    
+    <illustration-sprite></illustration-sprite>
+ 
+<!--<div class="left-buttons-block">
+    <button id="home-button"><a href="animal_shelter_start_page.html"><img src="home1.svg"></a></button>
+    <div id="menu">    
+        <button id="menu-button"><img id="menu-img" src="menu.svg"></button>
+        <ul id="left-menu">
+            <li><a href="">о приюте</a></li>
+            <li><a href="animal_shelter_all_pets.html">наши питомцы</a></li>
+            <li><a href="">помощь приюту</a></li>
+            <li><a href="">школа</a></li>
+        </ul>  
+    </div>
+</div>-->
+<!---------------------------------------------------------------------------logo-->
+
+    <div id="main">
+        <div class="circle">
+            <div id="circle">
+                <div id="circle-content">
+                    <div id="find-friend-img"><img src="find_friend.svg"></div> 
+                                                             
+                    <div id="logo-text">забери <span> меня <div class="logo-image-paw-left"><custom-illustration class="image" name="cat-paw"></custom-illustration></div></span><br>
+                        домой</div>
+                    <div id="text-buttons-block">
+                        <div id="cat-paw-block">
+                        <div class="logo-image-cat"><custom-illustration class="image" name="logo-image-1"></custom-illustration></div>
+                        <div class="logo-image-paw-right"><custom-illustration class="image" name="cat-paw"></custom-illustration></div>
+                        </div>
+                        <div class="main-text">
+                            <div>dog&cat&nbsp;&mdash;&nbsp;временный&nbsp;дом для&nbsp;кошек и собак,
+                                у которых пока нет своего человека
+                            </div>                     
+                        </div>
+                        <div class="buttons-block" id="main-buttons-block">
+                         <a class="main-buttons" href="animal_shelter_form_take_pet.html">взять&nbsp;питомца</a>
+                            <a class="main-buttons">помочь&nbsp;проекту</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    
+<!---------------------------------------------------------------------------main photo-->
+
+        <div class="top-block">
+            <button class="slider-buttons buttons-main-image" id="left-button"><img src="slider-button2px.svg"></button>
+
+        <picture id="main-background">
+            <source srcset="images/cat_vertical.webp" media="(max-width: 700px)">
+            <img src="images/dog_and_cat.jpg" alt="cat and dog">           
+        </picture>            <!--фоновое изображение-->
+
+        <button class="slider-buttons buttons-main-image" id="right-button"><img id="button-next" src="slider-button2px.svg"></button>
+        </div>
+
+<!---------------------------------------------------------------------------pet miniatures-->
+
+<div class="pets-miniatures">    
+    
+        <div class="pet-miniature mini1"></div>
+        <div class="pet-miniature mini2"></div>
+        <div class="pet-miniature mini3"></div>
+        <div class="pet-miniature mini4"></div>
+        <div class="pet-miniature mini5"></div>
+   
+    <div class="pet-miniatures-caption">200+ питомцев в поисках дома</div>
+    
+
+<a id="see-all" href="animal_shelter_all_pets.html"><div>посмотреть</div><div><custom-icon name="arrow-right"></custom-icon></div></a>
+</div>       
+
+<!---------------------------------------------------------------------------hidden info-->
+        <div class="illustrated-menu-block">
+
+            <div id="hidden-info-block-container" id="take-pet-content">
+                <div class="hidden-info-block">
+                    <div class="info-block-hidden-content" id="hidden-content">
+                        <div class="hidden-info-block-title" id="hidden-title"></div>
+                        <div class="text" id="hidden-text"></div>
+                    </div>
+
+                    <div class="hidden-content" id="take-pet-content">
+                        <div class="info-block-title" id="take-pet-title">забрать питомца</div>
+                        <div class="text" id="take-pet-text">
+                            взяв питомца из приюта, вы не только поможете нам дать место тем, кто еще находится на улице,
+                            но и обретете верного и преданного друга                  
+                        </div>
+                    </div>
+
+                    <div class="hidden-content" id="help-content">
+                       <div class="info-block-title" id="help-title">помочь приюту</div>
+                        <div class="text" id="help-text">
+                            вы можете помочь нашим подопечным переводом средств на лечение, корма, игрушки, 
+                             поучаствовать в отлове животных и передержкой до устройства в семью, а также информационно
+                             - поделиться профилями наших питомцев в социальных сетях              
+                        </div>
+                    </div>                    
+                    <div class="hidden-content" id="clinic-content">
+                        <div class="info-block-title" id="clinic-title">ветеринарная клиника</div>
+                        <div class="text" id="clinic-text">
+                            Наш проект действует на базе ветеринарной клиники с опытными докторами,
+                            куда вы можете записать своего питомца. Большая часть вырученных средств идет на нужды приюта
+                        </div>                      
+                   </div>
+                    <div class="hidden-content" id="events-content">
+                        <div class="info-block-title" id="events-title">события и мероприятия</div>
+                        <div class="text" id="events-text">
+                            У нас часто проходят благотворительные ярмарки, выставки, концерты и другие мероприятия,
+                            где вы можете поучаствовать.                       
+                        </div>
+                   </div>
+                   <div class="hidden-content" id="school-content">
+                        <div class="info-block-title" id="school-title">обучение питомцев</div>
+                        <div class="text" id="school-text">
+                            У нас часто проходят благотворительные ярмарки, выставки, концерты и другие мероприятия,
+                            где вы можете поучаствовать.
+                        </div>
+                  </div>
+                    
+        
+<!---------------------------------------------------------------------------reference-->
+                <div class="info-block-refs">
+                    <div class="text-info-block-ref"><a id="hidden-ref" href="animal_shelter_all_pets.html"> посмотреть всех</a> </div>
+                    <div class="arrow-info-block-ref"><custom-icon name="arrow-right"></custom-icon></div> 
+                </div>  
+                 </div>
+                   </div>
+              
+<!----------------------------------------------------------------------------------------------------------------illustrated menu-->
+        <div id="illustrated-menu">           
+
+            <div class="illustration-container">
+                <div class="picture-title-cont">
+                    <div class="illustration" id="take-pet"><div class="illustration-image"><custom-illustration class="image" name="take-pet"></custom-illustration></div></div>                                
+                    <div class="small-version-title hidden-small-version-text"></div>
+                </div>
+                <div class="illustration-caption">забрать питомца</div>                
+                <div class="small-version-text hidden-small-version-text" id="take-pet-small-version"></div>
+                <div class="small-version-ref hidden-small-version-text"></div>
+            </div>
+            <div class="illustration-container">
+                <div class="picture-title-cont">
+                    <div class="illustration" id="help"><div class="illustration-image"><custom-illustration class="image" name="shelter-help"></custom-illustration></div></div>
+                    <div class="small-version-title hidden-small-version-text"></div>
+                </div>
+                <div class="illustration-caption">помощь приюту</div>                
+                <div class="small-version-text hidden-small-version-text" id="help-small-version"></div>
+                <div class="small-version-ref hidden-small-version-text"></div>                
+            </div>
+            <div class="illustration-container">
+                <div class="picture-title-cont">
+                    <div class="illustration" id="clinic"><div class="illustration-image"><custom-illustration class="image" name="clinic"></custom-illustration></div></div>                                   
+                    <div class="small-version-title hidden-small-version-text"></div>
+                </div>
+                <div class="illustration-caption">вет клиника</div>                
+                <div class="small-version-text hidden-small-version-text" id="clinic-small-version"></div>
+                <div class="small-version-ref hidden-small-version-text"></div>
+            </div>
+            <div class="illustration-container">
+                <div class="picture-title-cont">
+                    <div class="illustration" id="events"><div class="illustration-image"><custom-illustration class="image" name="events"></custom-illustration></div></div>
+                    <div class="small-version-title hidden-small-version-text"></div>
+                </div>
+                <div class="illustration-caption">события</div>                
+                <div class="small-version-text hidden-small-version-text" id="events-small-version"></div>
+                <div class="small-version-ref hidden-small-version-text"></div>
+            </div>
+            <div class="illustration-container">
+                <div class="picture-title-cont">
+                    <div class="illustration" id="school"><div class="illustration-image"><custom-illustration name="school" class="image"></custom-illustration></div></div>
+                    <div class="small-version-title hidden-small-version-text"></div>
+                </div>
+                <div class="illustration-caption">обучение</div>              
+                <div class="small-version-text hidden-small-version-text" id="school-small-version"></div>
+                <div class="small-version-ref hidden-small-version-text"></div>
+            </div> 
+                     
+        </div>
+       
+        </div>
+
+
+        <div class="title">хотят домой  
+            <div class="see-all-ref">
+                <div class="text-see-all-ref"><a href="animal_shelter_all_pets.html"> посмотреть всех</a></div>
+                <div id="arrow-see-all-ref"> <custom-icon name="arrow-right"></custom-icon></div> 
+            </div>   
+        </div>
+        
+         
+<!-------------------------------------------------------------------------slider-->
+<!--<custom-slider></custom-slider>-->
+   <div class="pets-slider-container" id="main-page-slider">
+        <button class="slider-buttons" id="slider-button-left"><div><custom-icon name="arrow-left"></custom-icon></div></button>
+        <div id="pets-slider">
+            <div class="pets-for-adoption" id="slider-content"> 
+              
+            </div>
+        </div>
+        <button class="slider-buttons" id="slider-button-right"><div><custom-icon name="arrow-right"></custom-icon></div></button>
+    </div>
+
+<!-------------------------------------------------------------------------/slider-->
+
+
+    <div class="title" id="title-take-friend">как забрать нового друга?  
+        <div class="see-all-ref">
+            <div class="text-see-all-ref"><a href="animal_shelter_all_pets.html"> посмотреть всех</a></div>
+            <div id="arrow-see-all-ref"> <custom-icon name="arrow-right"></custom-icon></div> 
+        </div>   
+    </div>
+
+    <div id="take-friend">
+        <div class="take-friend-stages">
+            <div class="take-friend-title"><div class="stage-number">1</div><div>заполните анкету</div></div>
+            <div class="take-friend-text">внимательно заполните анкету, это очень важный этап</div>
+            <a href="animal_shelter_form_take_pet.html" id="fill-form-button">заполнить анкету</a>
+        </div>
+        <div class="take-friend-stages">
+            <div class="take-friend-title"><div class="stage-number">2</div><div>дождитесь звонка менеджера</div></div>
+            <div class="take-friend-text">обязательно свяжемся с вами в течение 3-х дней</div>
+           
+        </div>
+        <div class="take-friend-stages">
+            <div class="take-friend-title"><div class="stage-number">3</div><div>встреча и личное знакомство</div></div>
+            <div class="take-friend-text">согласуем удобное время и пригласим в вас в наш центр</div>           
+        </div>
+    </div>
+
+    <div class="title">советы от нашей команды  
+        <div class="see-all-ref">
+            <div class="text-see-all-ref"><a href="animal_shelter_all_pets.html"> смотреть все</a></div>
+            <div id="arrow-see-all-ref"> <custom-icon name="arrow-right"></custom-icon></div> 
+        </div>   
+    </div>
+
+<!-------------------------------------------------------------------------articles-->
+    <div class="articles">
+        <div>
+        <a href="animal_shelter_article.html" class="article">
+            <div class="article-photo">
+                <img class="article-photo" src="images/dressirovka.jpg">  
+            </div>
+            <div class="article-caption"><div>поддается ли кошка дрессировке?</div></div>
+        </a> 
+        
+        <a href="" class="article">
+            <div class="article-photo">
+                <img class="article-photo" src="images/grooming.jpg">  
+            </div>
+            <div class="article-caption"><div>как приучить кошку к расчесыванию?</div></div>
+        </a> 
+</div>
+<div>
+        <a href="" class="article">
+            <div class="article-photo">
+                <img class="article-photo" src="images/doverie.jpg">  
+            </div>
+            <div class="article-caption"><div>как вернуть доверие собаки?</div></div>
+        </a> 
+
+        <a href="" class="article">
+            <div class="article-photo">
+                <img class="article-photo" src="images/vesennie_opasnosti.jpg">  
+            </div>
+            <div class="article-caption"><div>весенние опасности для кошек и собак</div></div>
+        </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    </div> <!--/main-->
+
+
+<!--   <footer> 
+        <div id="location-block">
+            <div id="address">
+                <div class="footer-title" >мы находимся по адресу:</div>
+                <div>
+                    <div>ул. Песочная, 34</div>
+                    <div>г. Витебск, Республика Беларусь</div>
+                </div> 
+                <div id="transport-block">
+                    <div class="footer-title">как добраться</div>
+                    <div id="transport">
+                        <div>от остановки "Железнодорожный вокзал"</div>
+                        <div>троллейбус 4 7 11</div>
+                        <div>автобус 3 22 25 10 </div>         
+                    </div>       
+                </div>
+                <div class="footer-title-docs">
+                    <a><div>документы</div><div class="arrow-footer"><custom-icon name="arrow-right"></custom-icon></div></a>    
+                </div>
+            </div> 
+
+            <div id="location">
+                <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.2333409539053!2d30.17281157711517!3d55.190106839416714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c573ea55ebd59f%3A0xc3d7acc7f27f2999!2zUGVzb2NobmF5YSAxLCDQktC40YLQtdCx0YHQuiwg0JLQuNGC0LXQsdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sby!4v1774977851400!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div id="social-documents-block">
+            <div id="social">
+                <div class="footer-title">мы в социальных сетях</div>
+                <div id="social-icons">
+                    <div class="social-icons" id="inst"><custom-icon name="inst"></custom-icon></div>
+                    <div class="social-icons"><custom-icon name="telegram"></custom-icon></div>
+                    <div class="social-icons" id="vk"><custom-icon name="vkontakte"></custom-icon></div>
+                    <div class="social-icons" id="facebook"><custom-icon name="facebook"></custom-icon></div>
+                </div>
+                <form class="footer-mail-form">
+                    <label class="footer-title">подпишитесь на новости</label>
+                    <div class="mail-message">
+                        <input id="subscribe-field" type="text" id="mail-field-footer" placeholder="введите e-mail">
+                        <input class="header-buttons" id="footer-mail-button" type="submit" value="подписаться">
+                    </div> 
+                </form>     
+                <form class="footer-mail-form" id="message-form">
+                    <label class="footer-title">напишите нам на почту</label>
+                    <div class="mail-message" id="text-message">
+                        <textarea id="mail-text" type="text" id="mail-field-footer" placeholder="введите сообщение"></textarea>
+                        <input class="header-buttons" id="footer-mail-button" type="submit" value="отправить">
+                    </div> 
+                </form>         
+            </div>
+        </div>
+    </footer>-->
+<custom-footer></custom-footer>
+  <!--  </div>-->
+    <script src="script/component/illustration_sprite.js"></script>
+    <script src="script/component/illustration.js"></script>
+    <script src="script/component/icon_sprite.js"></script>
+    <script src="script/component/icon.js"></script>
+    <script src="script/component/menu-component.js"></script>
+    <script src="script/component/header_component.js"></script>
+    <script src="script/component/footer_component.js"></script>   
+
+
+    <script src="script/data/Pet.js"></script>
+    <script src="script/data/data.js"></script>
+    <script src="script/data/pets.js"></script>
+
+    <script src="script/find_all_pets.js"></script>    
+    <script src="script/slider_script_1.js"></script>
+    <script src="script/get_id_name.js"></script>
+    <script src="script/illustration_block_script.js"></script>   
+    
+
+    <script src="script/menu_script.js"></script>
+    
+    <script src="script/main_page_buttons_replace_script.js"></script>
+    
+</body>
+</html>

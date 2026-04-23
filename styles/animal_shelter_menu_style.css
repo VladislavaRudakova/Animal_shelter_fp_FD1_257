@@ -1,0 +1,175 @@
+
+
+button#menu-button.is-active #menu-img {
+    display: none;
+}
+
+button#menu-button.is-active #close-img {
+    display: block;
+}
+
+
+div.left-buttons-block {
+    position: absolute;    
+    top: 80px;
+    left: 10px;
+    z-index: 3;
+}
+
+div.left-buttons-block button {   
+  position: relative;
+  border: solid 1px black;
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: none;
+   border: none;
+   width: 40px;
+   height: 40px;
+   
+}
+
+
+div#close-img {
+    display: none;
+}
+
+
+
+div.left-buttons-block button div {
+    position: static;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(112, 74, 56);
+}
+
+div.left-buttons-block button div#close-img {
+    width: 25px;
+    height: 25px;
+     
+}
+
+
+div.left-menu-button button:hover {
+    cursor: pointer;
+
+}
+
+div#menu {
+    position: absolute;
+  top: 5px;
+}
+
+div#menu-list {
+    position: relative;
+}
+
+ul#left-menu {    
+    list-style-type: none;
+    visibility: hidden;
+    width: 250px;
+    opacity: 0;
+    color: rgb(118, 45, 0);
+    background-color: rgb(255, 255, 255, 1);
+    padding: 30px;
+    margin-top: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;    
+    z-index: 3;
+    transform: translateY(-10px);
+    transition: all 0.1s ease; 
+}
+
+ul#left-menu.is-open {   
+    visibility: visible;
+    opacity: 1;    
+    transform: translateY(0);    
+}
+
+ul#left-menu li {
+   
+    padding: 10px;
+    border: solid 1px  rgb(118, 45, 0, 0);
+}
+
+
+
+ul#left-menu li:not(:first-child) {
+   
+   border-top: solid 1px  rgb(118, 45, 0, 0.5);;
+    
+}
+
+ul#left-menu li:last-child {
+    border-top: solid 1px  rgb(118, 45, 0, 0.5);
+     border-bottom: solid 1px  rgb(118, 45, 0, 0.5);
+   
+}
+
+ul#left-menu li:hover {
+   cursor: pointer;
+    border: solid 1px  rgba(118, 45, 0, 0.2);
+    
+    border-radius: 5px;
+   transform: scale(1.1);
+   transition: 0.1s;
+    
+}
+
+ul#left-menu li:hover + li{
+  
+   border-top: solid 1px  rgb(118, 45, 0, 0);
+    
+    
+}
+
+
+    
+
+
+ul#left-menu li a {
+    text-decoration: none;    
+}
+
+ul#left-menu li a:visited {
+    color: inherit;    
+}
+
+@media all and (max-width:1000px) {
+    div.left-buttons-block {
+    position: static;
+    top: 10px;
+    left: -20px;
+        
+    }
+
+div#menu {
+  position: static;
+}
+ul#left-menu {
+    position: absolute;
+  right: 0;
+  top: 0;
+}
+
+button#menu-button {
+    margin: 0;
+}
+
+left-menu {
+    position: static;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+
+}
+

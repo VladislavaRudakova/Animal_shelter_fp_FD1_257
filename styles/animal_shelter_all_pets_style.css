@@ -1,0 +1,555 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "Ysabeau SC", sans-serif;
+    
+}
+
+
+
+header.sub-header {
+    display: none;
+}
+
+select {
+    display: inline-block;
+}
+
+
+
+/*------------------------------------------------------------main block--*/
+
+
+div#main-all-pets {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: none;
+   
+}
+
+
+
+div#main-first-block {
+    
+    display: flex;
+    position: relative;    
+    width: 1200px;  
+    
+    flex-direction: column;
+  /*align-items: center;*/   
+    justify-content: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 40px;
+    padding-bottom: 0;   
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+
+div#title-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+div.title {
+    font-size: 120%;
+    text-transform: uppercase;
+    align-self: start;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    color: #762D00;   
+}
+
+/*------------------------------------------------selects--*/
+
+select { 
+    appearance: none;
+    background-image: url('../arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+ 
+
+select:hover {
+    cursor: pointer;
+    border-color: rgb(153, 70, 70);  
+}
+
+select#pet-kind, select#pet-age, select#pet-sex  {
+    padding: 0.5em;
+    border: solid 1px lightgray;
+    color: gray;
+    border-radius: 10px;
+    flex: auto;
+    margin-left: 30px;
+}
+
+select:focus {
+    cursor: pointer;
+    outline-color: gray;  
+}
+
+div.features>div, label {
+   text-transform: uppercase;
+   color: gray;
+   font-size: 90%;    
+}
+
+div.features-title {
+    display: flex;
+}
+
+div.features-title:hover {
+    cursor: pointer;
+}
+
+div.arrow-main {   
+    top: 2em;
+    right: 2em;
+    width: 1.5em;
+    height: 1.5em;    
+    background-image: url('../arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+div.arrow-main:hover {
+    cursor: pointer;  
+}
+
+div.arrow-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;    
+    background-image: url('../arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1em;
+    margin-left: 10px;
+}
+
+div#features-1 {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+div.pet-select, div.age-select {
+    flex: 300px 1 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+}
+
+
+div#features-2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+div.features {
+    flex: 500px 1 1;
+}
+
+div#sub-drop{
+    display: flex;
+
+}
+
+div#color-select-cont, div#character-select-cont {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 0fr;
+    grid-template-columns: 1fr;
+    transition: grid-template-rows 0.1s ease-in-out;
+    overflow: hidden;   
+}
+
+div.features ul{    
+    border: solid 1px rgb(194, 194, 194);
+    background-color: rgb(255, 255, 255, 1);
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 20px;
+    visibility: visible;
+    opacity: 0;
+    min-height: 0;
+    margin: 0;
+    transition: 0.2s ease;
+}
+
+
+
+/*div.features ul.is-open {  
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s;
+
+}*/
+
+div#color-select-cont.cont-is-open, div#character-select-cont.cont-is-open {  
+    grid-template-rows: 1fr;
+
+}
+
+div#color-select-cont.cont-is-hidden, div#character-select-cont.cont-is-hidden {  
+    display: none;
+
+}
+
+div#color-select-cont.cont-is-open ul, div#character-select-cont.cont-is-open ul {  
+   opacity: 1;
+
+}
+
+/*------------------------------------------для разворачивания поиска--*/
+
+
+.pet-search-form-cont {
+    display: grid;   
+    grid-template-rows: 0fr;
+  
+    transition: grid-template-rows 0.2s ease-in-out;
+}
+
+form#pet-search-form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    min-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.1s ease, transform 0.1s ease;
+}
+
+
+.pet-search-form-cont.is-open {   
+     grid-template-rows: 1fr;    
+    
+}
+
+.pet-search-form-cont.is-open form#pet-search-form { 
+      
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+ul.features li {
+   list-style-type: none;
+}
+
+ul.features li div {
+    display: inline-block;
+}
+
+/*-----------------------------------buttons--*/
+
+form#pet-search-form>div:last-child {     
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
+    padding-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+form#pet-search-form>div:last-child input, form#pet-search-form div:last-child button{     
+    background: none;
+    outline: solid 1px #762d00cc;
+    border: none;
+    border-radius: 8px;
+    color: #762D00;
+    text-transform: uppercase;
+    padding: 0.5em 1em 0.5em 1em;
+    transition: 0.2s;
+}
+
+form#pet-search-form>div:last-child input{     
+    flex: auto;
+}
+
+form#pet-search-form>div:last-child button{     
+    background: none;
+    outline: solid 1px #a8a8a8;
+    border: none;
+    border-radius: 8px;
+    color:#a8a8a8;    
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 0.5em 1em 0.5em 1em;
+    transition: 0.2s;
+}
+
+form#pet-search-form>div:last-child button div{
+   
+         
+    width: 1em;
+    height: 1em;
+}
+
+form#pet-search-form>div:last-child input:hover, form#pet-search-form>div:last-child button:hover{     
+   background-color: rgba(202, 153, 140, 0.8);
+   outline-color:  rgba(202, 153, 140, 0.8);  
+   border-radius: 8px;
+   color: #ffffff;
+   text-transform: uppercase;
+   padding: 0.5em 1em 0.5em 1em;
+}
+
+
+
+
+/*-------------------------------------------------------*/
+
+
+
+div.pets-slider-container {
+    display: flex;
+    align-items: center;
+   
+    margin-bottom: 70px;
+}
+
+div#pets-for-adoption {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+a.pet {
+    background-color: rgb(255, 255, 255, 0.7);
+    border: solid 1px rgb(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 25px;
+    border-radius: 25px;   
+}
+
+a.pet:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px rgba(173, 173, 173, 0.4);
+    transform: scale(1.03);
+    transition: 0.1s;
+}
+
+
+div.pet-photo {
+    position: relative;
+    width: 280px;
+    aspect-ratio: 280/340;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.pet-photo:hover img {
+    opacity: 0;
+    transition: 0.1s;
+}
+
+
+img.pet-photo {
+    position: absolute;
+    left: -30%;
+    width: auto;
+    height: 100%;
+}
+
+div.pet-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    padding: 1em;
+    color: #762D00;
+    text-transform: uppercase;
+    
+}
+
+div.pet-caption div {
+    padding: 0 1em 0 1em;
+}
+
+
+
+div#pet-photo-1 {
+    background-image: url('../images/Muha/3.jpg');
+    background-repeat: no-repeat;
+    background-size: 170%;
+    background-position: 50%;
+}
+
+div#pet-photo-2 {
+    background-image: url('../images/Vulf/5.jpg');
+    background-repeat: no-repeat;
+    background-size: 190%;
+    background-position: 50%;
+}
+
+div#pet-photo-3 {
+    background-image: url('../images/Luna/5.jpg');
+    background-repeat: no-repeat;
+    background-size: 190%;
+    background-position: 50%;
+}
+
+
+
+@media all and (max-width:1300px){
+
+    div#main-first-block { 
+             
+        padding-right: 40px;
+      
+    }
+}
+
+@media all and (max-width:1300px){
+
+    div#main-first-block { 
+        width: 100%;       
+        margin-top: 70px;        
+    }
+
+}
+
+
+@media all and (max-width:1000px){
+
+    div#color-select-cont, div#character-select-cont {
+        position: static;
+       
+    }
+
+    div#features-1 {
+        display: flex;
+        margin-top: 20px;
+        gap: 20px;
+
+    }
+    
+}
+
+
+@media all and (max-width:750px){
+
+    div#color-select-cont, div#character-select-cont {
+        position: static;
+    }
+
+    div#features-1 {
+       flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    div.pet-select {
+        flex: auto 1 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;     
+    }
+  
+    div.title {        
+        margin-left: 0;
+        margin-bottom: 40px;
+
+    }
+    
+}
+
+@media all and (max-width:400px) {
+
+    div.features ul {
+        padding: 20px;
+        font-size: 70%;
+    }
+
+    a.pet {
+        width: 100%;
+        border-radius: 25px;   
+    }
+
+
+    div.pet-photo {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 280/340;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    form#pet-search-form>div:last-child {     
+   
+    margin-top: 0;
+}
+    
+    
+}
+
+@media all and (max-width:380px) {
+
+    label {
+        display: none;
+    }
+
+    div#main-first-block { 
+       
+        padding: 20px;
+        margin-top: 30px;
+       
+    }
+
+    div.pet-select {
+        flex: auto 1 1;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;     
+    }
+
+    div.title {        
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    select#pet-kind, select#pet-age, select#pet-sex  {
+       
+        
+        margin-left: 0;
+}
+
+div.features {
+    flex: auto 1 1;
+}
+
+    div#features-2 {
+        flex-direction: column;
+    }
+
+    div.title {        
+           
+            font-size: 60%;
+        }
+
+}
+
+
+
+
+
+
+
+

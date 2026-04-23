@@ -1,0 +1,124 @@
+
+
+div.title {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+font-weight: 500;
+    width: 80%;
+    font-size: 220%;
+    padding: 1em;
+    color: #762D00;
+    text-transform: uppercase;   
+    border-bottom: solid 1px rgb(118, 45, 0, 0.7);       
+    margin: 20px;
+    background-color: rgb(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+div.see-all-ref {
+    font-size: 50%;
+    display: flex;
+    align-items: center;    
+    align-self: end;  
+}
+
+div.see-all-ref a {
+    text-decoration: none;     
+}
+
+div.see-all-ref a:visited {
+    color: inherit;     
+}
+
+
+div.see-all-ref div#arrow-see-all-ref {
+    width: 20px;
+    height: 20px;
+    display: inline-block;  
+}
+
+
+div.see-all-ref div#arrow-see-all-ref custom-icon{    
+    color: #762D00;    
+}
+
+
+@media all and (max-width: 1700px) {
+      
+   
+
+}
+
+
+@media all and (max-width: 1500px) {
+
+   
+
+}
+
+
+
+@media all and (max-width: 1300px) {
+
+
+
+}
+
+
+@media all and (max-width: 1000px) {/*-------------------------------------------*/
+
+    
+           
+}
+
+
+@media all and (max-width: 700px) {
+
+    div.title {
+        font-size: 150%;    
+    }
+
+    
+}
+
+
+@media all and (max-width: 600px) {
+
+   
+    
+}
+
+
+@media all and (max-width: 500px) {
+ div.title {
+        font-size: 100%;    
+    }
+div.see-all-ref div:first-child {
+    display: none;
+}
+  
+
+}
+
+
+@media all and (max-width: 450px) {
+   
+
+    
+
+}
+
+
+@media all and (max-width: 400px) {
+   
+
+
+}
+
+
+@media all and (max-width: 380px) {
+
+  
+
+}
+

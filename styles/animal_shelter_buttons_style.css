@@ -1,0 +1,54 @@
+button#see-all {
+    background: none;
+    text-transform: uppercase;
+    display: flex;   
+    padding: 1em;
+    margin-right: 100px;
+    border: solid;
+    border-width: 1px;
+    border-color:rgba(70, 77, 39, 0.9);
+    color:rgba(70, 77, 39);
+}
+
+
+button#see-all:hover {
+    border: none;
+    color: white;
+    background-color: rgba(70, 77, 39, 0.877);
+    transition: 0.1s;
+}
+
+button.slider-buttons {
+    text-align: center;   
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);         
+}
+
+img#button-next {
+    transform: rotateY(180deg);
+}
+
+
+button.slider-buttons {
+    text-align: center;   
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);        
+}
+
+button.slider-buttons div {   
+    width: 30px;
+    height: 30px;
+    color: gray;         
+}
+
+img#button-next {
+    transform: rotateY(180deg);
+}
+
+
+
+
+

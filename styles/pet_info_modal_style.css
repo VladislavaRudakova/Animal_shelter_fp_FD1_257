@@ -1,0 +1,104 @@
+div#modal {
+    position: fixed;
+    z-index: 4;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 100, 100, 0.9);
+    display: none;
+}
+
+
+div#modal.modal-open {
+    
+    display: flex;
+}
+
+
+div#modal-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    flex: 450px 0 0;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.95);    
+    border-radius: 20px;
+    gap: 40px;   
+}
+
+div#modal-title {
+    font-size: 150%;
+    margin-top: 30px;
+}
+
+div#modal-social {
+    display: flex;
+}
+
+div#modal-close {
+    height: 20px;
+}
+
+div#modal-social-icons {
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.2s;    
+}
+
+div#modal-social-icons div{
+    width: 40px;
+    height: 40px;    
+}
+
+div#modal-social-icons div:hover{
+    cursor: pointer;
+    color: brown;
+    
+}
+
+div#modal-social-icons div#vk-modal{
+    width: 50px;
+    height: 50px;
+}
+
+div#facebook-modal{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+@media all and (max-width: 500px) {
+
+div#modal {
+    
+    background:none;
+   
+}
+
+div#modal-message {
+    position: absolute;
+    flex: auto 1 1;
+    height: 300px;
+
+    
+}
+
+button.share-button {
+    position: relative;
+}
+
+
+}
+
+
