@@ -68,10 +68,10 @@ const gloriaText=`С тех пор, как Глория переехала из 
 Даже если вы пока не готовы завести питомца, вы можете помочь! Отошлите ссылку на анкету Глории друзьям, 
 расскажите о ней знакомым. Возможно, среди них находится тот, кто мечтает сделать ее своей домашней.`
 
-const gloriafPhotos=['images/gloria/1.jpg', 'images/gloria/2.jpg', 'images/gloria/3.jpg', 'images/gloria/4.jpg', 'images/gloria/5.jpg'];
+const gloriafPhotos=['images/Gloria/1.jpg', 'images/Gloria/2.jpg', 'images/Gloria/3.jpg', 'images/Gloria/4.jpg', 'images/Gloria/5.jpg'];
 
-const gloriaAccPhoto = 'images/gloria/3.jpg'
-const gloriaBackPhoto = 'images/gloria/4.jpg'
+const gloriaAccPhoto = 'images/Gloria/3.jpg'
+const gloriaBackPhoto = 'images/Gloria/4.jpg'
 
 //-------------------------------------------------------------------mimi
 
