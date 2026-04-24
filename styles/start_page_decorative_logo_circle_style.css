@@ -59,20 +59,33 @@ div.logo-image-cat {
 }
 
 div.logo-image-paw-left {
+    color: #762D00;
     position: absolute;
     left: -100px;
     top: 10px;
     width: 100px;
-    height: 50px;
+    height: 45px;
 }
+
+
+div.logo-image-paw-left custom-illustration {
+    color: rgb(118, 45, 0, 0.8);
+    
+}
+
+div.logo-image-paw-right custom-illustration {
+    color: rgb(118, 45, 0, 0.8);
+    
+}
+
 
 div.logo-image-paw-right {
    position: absolute;
     right: 150px;
     top: 100px;
-    width: 100px;
+    width: 90px;
     aspect-ratio: 100/50;
-    transform: rotate(70deg);    
+    
 }
 
 div.logo-image-paw custom-illustration {   
@@ -432,7 +445,8 @@ a.main-buttons:hover {
 
     div.circle {
         top: 50px;
-        overflow: visible;  
+        overflow: visible;
+              
     }
 
     div#circle {

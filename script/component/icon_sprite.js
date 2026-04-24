@@ -1,8 +1,5 @@
 class IconSprite extends HTMLElement {
 
-   
-
-
   connectedCallback() {
     this.style.display = 'none';
     this.innerHTML = 
@@ -98,12 +95,19 @@ class IconSprite extends HTMLElement {
             </symbol>
 
             <symbol id="close" viewBox="0 0 18 18" style="width:100%; height:100%;">
-                <path d="M1.5 1.5L15.7549 15.7549" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M15.7549 1.5L1.5 15.7549" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M1.5 1.5L15.7549 15.7549" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M15.7549 1.5L1.5 15.7549" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </symbol>
 
             <symbol id="menu" viewBox="0 0 27 22" style="width:100%; height:100%;">
-               <path d="M1.5 1.5L25.5 1.5M1.5 11L25.5 11M1.5 20.5L25.5 20.5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+               <path d="M1.5 1.5L25.5 1.5M1.5 11L25.5 11M1.5 20.5L25.5 20.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </symbol>
+
+            <symbol id="home" viewBox="0 0 23.01 24.36" style="width:100%; height:100%;">
+              <g>
+    <path class="cls-1" d="m20.19,23.36H2.82c-1,0-1.82-.76-1.82-1.7v-10.59c0-.33.14-.64.38-.87L10.58,1.36c.51-.49,1.34-.49,1.85,0l9.21,8.83c.24.23.38.54.38.86v10.6c0,.94-.82,1.7-1.82,1.7Z"/>
+    <rect class="cls-1" x="8.78" y="12.04" width="5.45" height="5.36" rx="1.58" ry="1.58"/>
+  </g>
             </symbol>
 
 

@@ -34,21 +34,33 @@ button.slider-buttons {
     text-align: center;   
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.1s;        
+}
+
+button.slider-buttons:hover {
+    text-align: center;   
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.5);        
 }
 
 button.slider-buttons div {   
     width: 30px;
     height: 30px;
-    color: gray;         
+    color: rgb(150, 150, 150);         
 }
 
 img#button-next {
     transform: rotateY(180deg);
 }
 
-
+div#header-home-button img {
+    height: 30px;
+    width: 30px;
+}
 
 
 

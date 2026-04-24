@@ -5,7 +5,7 @@ class CustomHeader extends HTMLElement {
         <a href="index.html">
           <div class=logo-sign-block>
             <div class="sign"><custom-illustration name="logo-sign"></custom-illustration></div>      
-            <div class="logo"><img src="CAT&DOG.svg" alt=""></div>
+            <div class="logo"><img src="images/CAT&DOG.svg" alt=""></div>
           </div>
         </a>              
         <div class="header-fields">
@@ -15,12 +15,14 @@ class CustomHeader extends HTMLElement {
               <input class="header-buttons" type="submit" value="подписаться">
             </form>
             <form id="main-search">
-              <input class="search" type="text" placeholder="поиск по сайту">
+              <input class="search" type="text" placeholder="поиск">
               <button class="header-buttons" id="main-search-button" type="submit"><div><custom-icon name="search"></custom-icon><div></button>
             </form>
-        </div> 
+        </div>
+        <div id="header-home-button"><img src="images/home.svg"></div>
         <left-menu></left-menu> 
     </header>
+   
     <header class="sub-header">
       <button class="sub-header-buttons"><a href="#title-take-friend">как забрать питомца?</a></button>
       <button class="sub-header-buttons"><a>ветеринарная клиника</a></button>

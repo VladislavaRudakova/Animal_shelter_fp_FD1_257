@@ -35,7 +35,7 @@ const resizeObserver = new ResizeObserver(entries => {
         }
         
         
-        findPhotoQuantity(photoWhidth); 
+        findPhotoQuantity(); 
     }
 });
 
@@ -46,7 +46,7 @@ if (photo) {
 
 
 
-function findPhotoQuantity(photoWhidth){
+function findPhotoQuantity(){
        
     if (mediaQuery9.matches) {
         
@@ -54,15 +54,29 @@ function findPhotoQuantity(photoWhidth){
     }  else if (mediaQuery8.matches) {
        
         photoQuantity=1;
-    }else if (mediaQuery7.matches) {
+    } else if (mediaQuery7.matches) {
        
         photoQuantity=1;
-    }else if (mediaQuery6.matches) {
+    } else if (mediaQuery6.matches) {
        
         photoQuantity=2;
-    }  else if (mediaQuery3.matches) {
+    }
+    else if (mediaQuery5.matches) {
+       
+        photoQuantity=2;
+
+    } else if (mediaQuery3.matches) {
       
         photoQuantity=3;
+    }  else if (mediaQuery2.matches) {
+      
+       photoQuantity=4;
+    }  else if (mediaQuery1.matches) {
+      
+       photoQuantity=4;
+    } else if (mediaQuery0.matches) {
+      
+       photoQuantity=4;
     } 
     offset=0;
     sliderContent.style.transform=`translateX(${-offset}px)`;

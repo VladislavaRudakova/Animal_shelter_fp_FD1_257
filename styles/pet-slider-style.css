@@ -25,6 +25,7 @@ a.pet {
     margin: 20px;
     padding: 25px;
     border-radius: 25px;
+   
     flex: auto 0 0;
    
 }
@@ -120,14 +121,14 @@ div#pets-slider{
 @media all and (max-width: 1520px) {
     
     div.pet-photo {    
-    width: 220px;    
+   width: 220px;   
     aspect-ratio: 280/340;    
     transition: 0.3s;
 }
 
-div#pets-slider {   
-    width: 1248px;        
-}
+    div#pets-slider {   
+        width: 1248px;        
+    }
 
 }
 
