@@ -1,7 +1,9 @@
 class CustomFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = 
-      `<footer> 
+      `
+      
+      <footer> 
         <div id="location-block">
             <div id="address">
                 <div class="footer-title" >мы находимся по адресу:</div>

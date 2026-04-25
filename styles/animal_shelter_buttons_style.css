@@ -84,6 +84,14 @@ button.slider-buttons.previous-page div {
 }
 
 
+button#scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    z-index: 90;
+}
+
 @media all and (max-width:1000px) {
 
     div.circle {

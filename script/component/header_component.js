@@ -21,7 +21,7 @@ class CustomHeader extends HTMLElement {
         </div>
         <left-menu></left-menu> 
     </header>
-  <a href="javascript:history.back()" id="previous-page"><button class="slider-buttons previous-page"><div><custom-icon name="arrow-left"></custom-icon></div></button></a>
+    <a href="javascript:history.back()" id="previous-page"><button class="slider-buttons previous-page"><div><custom-icon name="arrow-left"></custom-icon></div></button></a>
     <header class="sub-header">
       <button class="sub-header-buttons"><a href="#title-take-friend">как забрать питомца?</a></button>
       <button class="sub-header-buttons"><a>ветеринарная клиника</a></button>

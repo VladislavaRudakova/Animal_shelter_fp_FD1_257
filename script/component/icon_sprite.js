@@ -10,7 +10,7 @@ class IconSprite extends HTMLElement {
             <symbol id="arrow-left" viewBox="0 0 22 41" fill="none">
                 <path d="M21.1277 0.707031L1.41415 20.4206L21.1277 40.1341" stroke="currentColor" stroke-width="2"/>
             </symbol>
-            <symbol id="arrow-top" width="41" height="22" viewBox="0 0 41 22" fill="none">
+            <symbol id="arrow-top" viewBox="0 0 41 22" fill="none">
                 <path d="M40.1343 21.1277L20.4207 1.41415L0.707205 21.1277" stroke="currentColor" stroke-width="2"/>
             </symbol>
             <symbol id="arrow-bottom" viewBox="0 0 41 22" fill="none" >
