@@ -46,7 +46,7 @@ if (photo) {
 
 
 
-function findPhotoQuantity(){
+function findPhotoQuantity(){ // определение крличества фото для слайдера в зависимости от ширины окна
        
     if (mediaQuery9.matches) {
         
@@ -55,25 +55,29 @@ function findPhotoQuantity(){
        
         photoQuantity=1;
     } else if (mediaQuery7.matches) {
-       
+
         photoQuantity=1;
+
     } else if (mediaQuery6.matches) {
        
         photoQuantity=2;
-    }
-    else if (mediaQuery5.matches) {
-       
+
+    } else if (mediaQuery5.matches) {
+
         photoQuantity=2;
 
     } else if (mediaQuery3.matches) {
       
         photoQuantity=3;
+
     }  else if (mediaQuery2.matches) {
       
        photoQuantity=4;
+
     }  else if (mediaQuery1.matches) {
       
        photoQuantity=4;
+
     } else if (mediaQuery0.matches) {
       
        photoQuantity=4;
@@ -86,10 +90,10 @@ function findPhotoQuantity(){
 
 //window.addEventListener('resize', findSliderParametres);
 
-sliderButtonRight.addEventListener('click', ()=>{
+sliderButtonRight.addEventListener('click', ()=>{  // определение нужного расстояния и смещение фотоконтейнера
  
     console.log(photoWhidth+'PHOTOWIDTH')
-    console.log(photoQuantity+'QUANTITY!!!!')
+    console.log(photoQuantity+'QUANTITY!')
     console.log(offset+'OFFSET')
     if ((offset >= (photoWhidth*(document.querySelectorAll('.pet').length-photoQuantity))) ){
         console.log(document.querySelectorAll('.pet').length+'LENGTH')
@@ -98,5 +102,19 @@ sliderButtonRight.addEventListener('click', ()=>{
     } else {
         offset +=photoWhidth;
     }
+sliderContent.style.transform=`translateX(${-offset}px)`;
+});
+
+
+
+sliderButtonLeft.addEventListener('click', ()=>{
+ 
+    console.log(offset+'OFFSET')
+    if (offset > 0){
+        console.log(document.querySelectorAll('.pet').length+'LENGTH')
+        
+        offset -=photoWhidth;
+        console.log(offset+'OFFSET')
+    } else {return;}
 sliderContent.style.transform=`translateX(${-offset}px)`;
 });

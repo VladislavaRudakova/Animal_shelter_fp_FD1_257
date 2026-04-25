@@ -70,12 +70,11 @@ div#header-home-button img {
 
 
 button.slider-buttons.previous-page {
-   
     background: none;
-   position: absolute;
+    position: absolute;
     z-index: 20;
- left: 40px;
-  top: 93px;
+    left: 40px;
+    top: 93px;
 }
 
 button.slider-buttons.previous-page div {
@@ -87,17 +86,16 @@ button.slider-buttons.previous-page div {
 
 @media all and (max-width:1000px) {
 
-div.circle {
+    div.circle {
         flex-direction: column;
     }
-button.slider-buttons.previous-page {
-  pointer-events: auto;
-  position: static;
-    
-}
 
+    button.slider-buttons.previous-page {
+        pointer-events: auto;
+        position: static;
+       
 
-    
+    }
 
 
 }
