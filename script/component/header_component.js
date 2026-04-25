@@ -19,10 +19,9 @@ class CustomHeader extends HTMLElement {
               <button class="header-buttons" id="main-search-button" type="submit"><div><custom-icon name="search"></custom-icon><div></button>
             </form>
         </div>
-        <div id="header-home-button"><img src="images/home.svg"></div>
         <left-menu></left-menu> 
     </header>
-   
+  <a href="javascript:history.back()" id="previous-page"><button class="slider-buttons previous-page"><div><custom-icon name="arrow-left"></custom-icon></div></button></a>
     <header class="sub-header">
       <button class="sub-header-buttons"><a href="#title-take-friend">как забрать питомца?</a></button>
       <button class="sub-header-buttons"><a>ветеринарная клиника</a></button>

@@ -8,7 +8,7 @@ div#take-friend {
 }
 
 div.take-friend-stages {
-    flex: 420px 1 0;
+    flex: 300px 1 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -32,13 +32,46 @@ div.take-friend-title {
 }
 
 div.stage-number {
+    position: relative;
     flex: 70px 0 0;
     height: 70px;
     border: solid 3px rgba(207, 116, 74, 0.562);
-    border-radius: 35px;
+    border: none;
     text-align: center;
     font-size: 150%;
+    align-self: start;
 }
+
+
+
+
+div#number-paw {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -55px;
+    left: -50px;
+}
+
+  div.take-friend-stages:first-child  div#number-paw custom-illustration {
+    transform: rotate(-10deg);
+    top: 3px;
+}
+
+div.take-friend-stages:last-child  div#number-paw custom-illustration {
+    transform: rotate(10deg);
+    top: 3px;
+}
+
+div#number-paw custom-illustration {
+    width: 100%;
+    position: absolute;
+    color: rgba(207, 116, 74, 0.849);
+
+}
+
+
+
 
 a#fill-form-button {
     border: solid 1px rgba(70, 77, 39, 0.7);
@@ -87,10 +120,14 @@ div.take-friend-title {
 div.stage-number {
     flex: 50px 0 0;
     height: 50px;
-    border: solid 3px rgba(207, 116, 74, 0.562);
-    border-radius: 25px;
-    text-align: center;
     font-size: 130%;
+}
+
+div#number-paw {
+    width: 65px;
+    height: 65px;
+    top: -60px;
+    left: -50px;
 }
 
 
@@ -111,9 +148,7 @@ div.stage-number {
     div.stage-number {
         flex: 40px 0 0;
         height: 40px;
-        border: solid 3px rgba(207, 116, 74, 0.562);
-        border-radius: 20px;
-        text-align: center;
+       
         font-size: 110%;
     }
 
@@ -121,5 +156,12 @@ div.stage-number {
         font-size: 110%;   
         padding-left: 40px;
     }
+
+    div#number-paw {
+        width: 55px;
+        height: 55px;
+        top: -65px;
+        left: -43px;
+}
 
 }

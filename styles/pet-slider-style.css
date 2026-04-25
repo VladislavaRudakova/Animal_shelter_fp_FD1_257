@@ -8,15 +8,11 @@ div.pets-slider-container {
 div#pets-slider{
     overflow: hidden;
     width: 1488px;
-      
 }
 
 div.pets-for-adoption {
     display: flex;
-    
     transition: 0.1s ease-in-out
-    
-
 }
 
 a.pet {
@@ -25,18 +21,24 @@ a.pet {
     margin: 20px;
     padding: 25px;
     border-radius: 25px;
-   
     flex: auto 0 0;
-   
 }
 
-a.pet:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 10px 2px rgba(173, 173, 173, 0.4);
-    transform: scale(1.03);
-    transition: 0.1s;
-}
+@media (hover: hover) {
 
+    a.pet:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 10px 2px rgba(173, 173, 173, 0.4);
+        transform: scale(1.03);
+        transition: 0.1s;
+    }
+
+    div.pet-photo:hover img {
+        opacity: 0;
+        transition: 0.1s;
+    }
+
+}
 
 div.pet-photo {
     position: relative;
@@ -51,21 +53,13 @@ div.pet-photo {
 
 
 
-div.pet-photo:hover img {
-    opacity: 0;
-    transition: 0.1s;
-}
-
 
 img.pet-photo {
     position: absolute;
     left: -30%;
     width: auto;
     height: 100%;
-
 }
-
-
 
 a.pet div.pet-caption {
     font-family: Arial, Helvetica, sans-serif;
@@ -77,15 +71,16 @@ a.pet div.pet-caption {
     text-transform: uppercase;    
 }
 
-
-
 div.pet-caption>div {
     padding: 0 1em 0 1em;
 }
 
+div.pet-caption .highlight {
+    font-weight: 700;
+}
+
 
 div.pet-caption div:last-child  {
-    
    position: relative;
   
 }
@@ -94,7 +89,6 @@ div.pet-caption div div.age-number {
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;   
     font-size: 95%;
-      
 }
 
 
@@ -108,23 +102,24 @@ div.pet-caption div div.age-number {
 @media all and (max-width: 1700px) {
 
     div.pet-photo {    
-    width: 260px;   
-    aspect-ratio: 3/3.64;    
-    transition: 0.3s;
-}
-div#pets-slider{   
-    width: 1408px;        
-}
+        width: 260px;   
+        aspect-ratio: 3/3.64;    
+        transition: 0.3s;
+    }
+
+    div#pets-slider{   
+        width: 1408px;        
+    }
 }
 
 
 @media all and (max-width: 1520px) {
     
     div.pet-photo {    
-   width: 220px;   
-    aspect-ratio: 280/340;    
-    transition: 0.3s;
-}
+        width: 220px;   
+        aspect-ratio: 280/340;    
+        transition: 0.3s;
+    }
 
     div#pets-slider {   
         width: 1248px;        
@@ -133,90 +128,81 @@ div#pets-slider{
 }
 
 @media all and (max-width: 1450px) {
-    div.pet-photo {
-    
-   width: 270px;
-    
-    aspect-ratio: 280/340;
-    
-    transition: 0.3s;
-}
 
-div#pets-slider {   
-    width: 1086px;        
-}
+    div.pet-photo {
+        width: 270px;
+        aspect-ratio: 280/340;
+        transition: 0.3s;
+    }
+
+    div#pets-slider {   
+        width: 1086px;        
+    }
+
 }
 
 @media all and (max-width: 1200px) {
-    div.pet-photo {
-    
-   width: 250px;
-    
-    aspect-ratio: 280/340;
-    
-    transition: 0.3s;
-}
 
-div#pets-slider {   
-    width: 1026px;        
-}
+    div.pet-photo {
+        width: 250px;
+        aspect-ratio: 280/340;
+        transition: 0.3s;
+    }
+
+    div#pets-slider {   
+        width: 1026px;        
+    }
 
 }
 
 @media all and (max-width: 1150px) {
+
     div.pet-photo {
-    
-   width: 220px;
-    
-    aspect-ratio: 280/340;    
-   
-}
-div#pets-slider {   
-    width: 936px;        
-}
+        width: 220px;
+        aspect-ratio: 280/340; 
+    }
+
+    div#pets-slider {   
+        width: 936px;        
+    }
 
 
 }
 
 @media all and (max-width: 1080px) {
+
     div.pet-photo {
-    
-   width: 280px;
-    
-    aspect-ratio: 280/340;    
-   
-}
-div#pets-slider {   
-    width: 744px;        
-}
+        width: 280px;
+        aspect-ratio: 280/340;
+    }
+
+    div#pets-slider {   
+        width: 744px;        
+    }
 
 }
 
 @media all and (max-width: 870px) {
+
     div.pet-photo {
-    
-   width: 320px;
-    
-  
-   
-}
-div#pets-slider {   
-    width: 412px;        
-}
+        width: 320px;
+    }
+
+    div#pets-slider {   
+        width: 412px;        
+    }
 
 }
 
 @media all and (max-width: 550px) {
+
     div.pet-photo {
-    
-   width: 300px;
-    
-  
-   
-}
-div#pets-slider {   
-    width: 390px;        
-}
+        width: 300px;
+    }
+
+    div#pets-slider {   
+        width: 390px;        
+    }
 
 }
 
@@ -225,27 +211,15 @@ div#pets-slider {
 
 @media all and (max-width: 510px) {
 
+    div.pet-photo {    
+        width: 270px;  
+        transition: 0.3s;
+    }
 
-
-button.slider-buttons{
-    
-   
-}
-
-
-
-
-
-div.pet-photo {    
-    width: 270px;  
-    transition: 0.3s;
-}
-
-div#pets-slider {   
-    width: 360px; 
-        
-}
-
+    div#pets-slider {   
+        width: 360px; 
+            
+    }
 
 
 }
@@ -253,47 +227,49 @@ div#pets-slider {
 
 @media all and (max-width: 450px) {
 
-div.pets-slider-container {
-    position: relative;
+    div.pets-slider-container {
+        position: relative;
+        width: 100%;
+
+    }
+
+    button.slider-buttons{
+        position: absolute;
+        z-index: 10;
+        background: none;
+    
+    }
+
+    button.slider-buttons div{
+    
+        width: 20px;
+        height: 20px;
+    }
+
+    #slider-button-left {
+        bottom: 0;
+    }
+
+    #slider-button-right {
+        right: 0;
+        bottom: 0;
+    }
+
+    div.pet-photo {    
+        width: 100%;  
+        transition: 0.3s;
+    }
+
+    div#pets-slider {
+        width: 100%;
+    
+    }
+
+    a.pet {
+    
+        margin: 0;
     width: 100%;
-
-}
-
-button.slider-buttons{
-    position: absolute;
-   
-}
-
-button.slider-buttons div{
-   
-    width: 20px;
-    height: 20px;
-}
-
-#slider-button-left {
-    bottom: 0;
-}
-
-#slider-button-right {
-    right: 0;
-    bottom: 0;
-}
-
-div.pet-photo {    
-    width: 100%;  
-    transition: 0.3s;
-}
-
-div#pets-slider {
-    width: 100%;
-   
-}
-
-a.pet {
-   
-    margin: 0;
- width: 100%;
-   
-}
+    
+    }
 
 }

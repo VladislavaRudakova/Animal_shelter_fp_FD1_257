@@ -24,7 +24,7 @@
     <div id="modal">
         <div id="modal-message">
             <div id="modal-close"><custom-icon name="close"></custom-icon></div>
-            <div id="modal-title">где поделиться?</div>
+           
             <div id="modal-social">
                 
                 <div id="modal-social-icons">
@@ -42,7 +42,11 @@
     <!--<button id="home-button"><a href="animal_shelter_start_page.html"><img src="home1.svg"></a></button>-->
     <div id="main">
         <div id="main-first-block">
+            
             <div class="pet-info">
+                
+
+                
                 <div>
                     <div class="main-info-block">
                         <div id="main-photo-cont"></div> <!--содержимое загружается js (pet-info-script)--> 
@@ -50,10 +54,12 @@
 
                             <div class="name-block">
                                 <div id="pet-name"></div>
+                                <div class="name-icon"><custom-illustration name="cat-paw"></custom-illustration></div>
                             </div>
+                            
                             <div id="pet-features">
                                 <div class="pet-features-cont">
-                                    <div class="pet-features">пол<div class="value">женский</div></div>
+                                    <div class="pet-features" id="pet-sex">пол<div class="value">женский</div></div>
                                     <div class="pet-features" id="pet-age"><div class="value"></div></div>
                                 </div>
                                 <div class="pet-features-cont">
@@ -121,10 +127,7 @@
 
        </div>
 
-        
-
-
-         
+       
 
     <div class="pets-slider-container" id="main-page-slider">
         <button class="slider-buttons" id="slider-button-left"><div><custom-icon name="arrow-left"></custom-icon></div></button>
@@ -141,7 +144,7 @@
 
 
     </div>
-    <footer></footer>
+    <custom-footer></custom-footer>
     <script src="script/component/illustration_sprite.js"></script>
     <script src="script/component/illustration.js"></script>
     <script src="script/component/icon_sprite.js"></script>

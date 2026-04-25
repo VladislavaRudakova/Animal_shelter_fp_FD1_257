@@ -39,13 +39,19 @@ button.slider-buttons {
     transition: 0.1s;        
 }
 
-button.slider-buttons:hover {
+@media (hover: hover) {
+
+    button.slider-buttons:hover {
     text-align: center;   
     padding: 10px;
     border: none;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.5);        
 }
+
+}
+
+
 
 button.slider-buttons div {   
     width: 30px;
@@ -60,6 +66,40 @@ img#button-next {
 div#header-home-button img {
     height: 30px;
     width: 30px;
+}
+
+
+button.slider-buttons.previous-page {
+   
+    background: none;
+   position: absolute;
+    z-index: 20;
+ left: 40px;
+  top: 93px;
+}
+
+button.slider-buttons.previous-page div {
+    width: 23px;
+    height: 23px;
+    color: #762d00a6;
+}
+
+
+@media all and (max-width:1000px) {
+
+div.circle {
+        flex-direction: column;
+    }
+button.slider-buttons.previous-page {
+  pointer-events: auto;
+  position: static;
+    
+}
+
+
+    
+
+
 }
 
 

@@ -1,6 +1,6 @@
-
 const petInfo = document.getElementById('pet-info-text');
 const petNameCont = document.getElementById('pet-name');
+const petSex = document.getElementById('pet-sex');
 const petAge = document.getElementById('pet-age');
 const petCharacter = document.getElementById('pet-character');
 const characterValue = petCharacter.querySelector('.value');
@@ -31,16 +31,18 @@ var petName1 = petData.petName;
 function showPetInfo(id, name, pets) {
     console.log ('SHOW PET INFO START!')
     console.log (id + name + 'ARGUMENTS!')
+    let declention='';
     pets.forEach (pet=> {
         if(pet.id===id&&pet.name===name) {
         petNameCont.textContent=pet.name;
+        petSex.innerHTML=`<div class="value feature-title">пол</div><div class="value" style="background-color:${colors.get(pet.sex)}">${pet.sex}</div>`
         console.log (pet.id + pet.name + 'PET FOUND!')
-        petAge.innerHTML=`возраст<div class="value">${pet.age.toString()}&nbsp;лет`;
+        petAge.innerHTML=`<div class="value feature-title">возраст</div><div class="value" style="background-color:${colors.get('age')}">${pet.age.toString()}&nbsp;${getAgeDeclention(pet.age, declention)}</div>`;
     var petCharacterValues='';
     pet.character.forEach(value=>{
     petCharacterValues+=`<div class="value" style="background-color:${colors.get(value)}">${value}</div>`;    
     })
-    petCharacter.innerHTML='<div>характер</div><div id=character-cont>'+ petCharacterValues+'</div>';
+    petCharacter.innerHTML='<div class="value feature-title">характер</div><div id=character-cont>'+ petCharacterValues+'</div>';
     petInfo.innerHTML=pet.textInfo;
 
     showPetPhoto(pet.accPhotos);

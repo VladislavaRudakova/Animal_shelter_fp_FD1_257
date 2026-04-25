@@ -1,5 +1,4 @@
 
-
 div.circle {
     width: 100%;   
     position: absolute;
@@ -43,7 +42,6 @@ div#circle-content {
     right: 30px;
     transform: rotate(15deg);
     width: 350px;
-    height: 554/105;
 }
 
 div#cat-paw-block {
@@ -104,7 +102,6 @@ div#logo-text{
     font-size: 350%;
     text-transform: uppercase;   
     font-weight: 600;
-    
 }
 
 div#logo-text span {
@@ -124,6 +121,11 @@ div.main-text {
     border-radius: 35px;
     padding: 0 30px 0 30px;   
 }
+
+div.main-text span.highlight  {
+    font-weight: 700;
+}
+
 
 div.buttons-block {  
     position: absolute;
@@ -151,27 +153,15 @@ a.main-buttons {
     font-size: 120%;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
     height: auto;
     transition: 0.1s;    
 }
 
-a.main-buttons:first-child {
-    
-    outline: solid 4px rgb(190, 75, 21);
-    border: none;
-    outline: none;   
-    text-transform: uppercase;
-    height: auto;    
-}
-
 a.main-buttons:last-child {
-    
-    border: solid 1px rgb(118, 45, 0, 0.5);
-    border: none;   
+    background-color: rgb(212, 178, 169);
     background-color: rgb(187, 106, 85);
-    color: rgb(255, 255, 255);   
-    text-transform: uppercase;
-    height: auto;    
+    color: rgb(255, 255, 255); 
 }
 
 a.main-buttons:hover {
@@ -231,12 +221,12 @@ a.main-buttons:hover {
     }
 
     div#circle-content {   
-        right: 130px;   
+        right: 100px;   
     }
 
     div#logo-text {
         font-size: 300%;
-        right: 100px;   
+        right: -30px;   
     }
 
     div.logo-image-paw-left {    
@@ -248,12 +238,11 @@ a.main-buttons:hover {
 
     div.main-text {   
         font-size: 110%;
-        right: 100px;   
+        right: 70px;   
     }
 
     div.buttons-block {
-        right: 40px;                
-   
+        right: 70px;
     }
     
 }
@@ -281,18 +270,24 @@ a.main-buttons:hover {
         transform: translate(140px, -20px);
     }
 
+    div#circle-content {   
+        right: 100px;   
+    }
+
     div#logo-text {  
         font-size: 280%;     
     }
 
     div.main-text {   
         font-size: 110%;
+        top: 10px;
+        right: 90px;
     }
    
     a.main-buttons {   
         padding: 1em 2em 1em 2em;
         margin: 0 3px 0 10px;
-        font-size: 110%;    
+        font-size: 110%;
     }
 
     #find-friend-img {      
@@ -301,6 +296,11 @@ a.main-buttons:hover {
         transform: rotate(15deg);
         width: 320px;
         aspect-ratio: 554/105;
+    }
+
+    div.buttons-block {
+       bottom: -90px;
+       right: 90px;
     }
 
 }
@@ -328,11 +328,13 @@ a.main-buttons:hover {
     }
  
     div#logo-text { 
-        font-size: 270%;     
+        font-size: 270%;
+        right: -50px;     
     }
 
     div.main-text {       
         font-size: 100%;
+        right: 50px;
     }
 
     input.main-buttons {   
@@ -346,14 +348,14 @@ a.main-buttons:hover {
         top: -110px;
         right: 50px;
         transform: rotate(15deg);
-        width: 320px;
+        width: 300px;
         aspect-ratio: 554/105;
     }
 
 
     div.logo-image-cat {       
         right: 280px;
-        top: -60px;
+        top: -45px;
         width: 100px;
         height: 50px;
     }
@@ -371,8 +373,10 @@ a.main-buttons:hover {
         top: 80px;
         width: 100px;
         aspect-ratio: 100/50;
-        transform: rotate(70deg);
-        
+    }
+
+    div.buttons-block {
+       right: 50px;
     }
 
 }
@@ -404,11 +408,23 @@ a.main-buttons:hover {
         font-size: 90%;
     }
 
+    div.logo-image-paw-right {    
+        right: 130px;
+        top: 80px;
+        width: 90px;
+        aspect-ratio: 100/50;
+    }
+
     div.logo-image-paw-left {    
         right: 290px;
         top: 10px;
         width: 100px;
-        height: 50px;
+        height: 45px;
+    }
+
+    div.buttons-block {
+        bottom: -70px;
+       right: 50px;
     }
 
 }
@@ -424,11 +440,11 @@ a.main-buttons:hover {
         right: 170px;        
     }
 
-    #find-friend-img {      
-       
+    #find-friend-img {
         width: 280px;
-       
     }
+
+   
   
    
 }
@@ -460,7 +476,7 @@ a.main-buttons:hover {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         transition: 0.7s;
-        background-color: rgb(255, 255, 255, 0.8);          
+        background-color: rgb(255, 255, 255, 0.9);          
     }
 
     div#text-buttons-block {
@@ -471,7 +487,7 @@ a.main-buttons:hover {
 
     div#logo-text {    
         position: static;
-        flex: 300px 0 1;
+        flex: 250px 0 1;
         font-size: 300%;
         padding: 20px;
         padding-right: 0;   
@@ -481,15 +497,15 @@ a.main-buttons:hover {
     div.main-text {
         position: static;
         font-size: 130%;
-        padding: 0px 20px 0 20px;    
+        padding: 0px 20px 0 20px;
+        margin-left: 0;    
     }
 
     #find-friend-img {   
         top: 15px;
-        right: 30px;
-        transform: rotate(10deg);
-        width: 310px;
-        height: 554/105;
+        right: 70px;
+        transform: rotate(5deg);
+        width: 300px;
     }
 
 
@@ -508,16 +524,16 @@ a.main-buttons:hover {
         position: static;
         display: inline-block;        
         width: 100px;
-        height: 50px;   
+        height: 45px;   
     }
 
     div.logo-image-paw-right {
         position: relative;   
         right: 0px;
         top: 15px;
-        width: 100px;
-        aspect-ratio: 100/50;
-        transform: rotate(70deg);    
+        width: 90px;
+        height: 45px;
+        aspect-ratio: 100/50;  
     }
 
     div.buttons-block {
@@ -528,6 +544,23 @@ a.main-buttons:hover {
     div.buttons-block input {
        margin: 0 3px 0 3px;      
     }
+
+
+    a.main-buttons:first-child {
+     background-color: rgb(187, 106, 85);
+   color: rgb(255, 255, 255); 
+}
+
+    a.main-buttons:last-child {
+        background-color: rgb(212, 178, 169);
+        color: rgb(255, 255, 255); 
+    }
+
+    a.main-buttons:hover {
+        background-color: rgba(202, 153, 140, 1);
+        color: rgb(255, 255, 255);   
+    }
+
   
         
 }
@@ -535,10 +568,16 @@ a.main-buttons:hover {
 
 @media all and (max-width: 900px) { 
 
-    div.main-text {  
-        
+    #find-friend-img {   
+        top: 15px;
+        right: 40px;
+       
+    }
+
+    div.main-text { 
         font-size: 110%;        
         transition: 0.2s;
+         margin-left: 0;  
     }
    
     div.buttons-block {
@@ -555,10 +594,6 @@ a.main-buttons:hover {
         font-size: 110%;
     }
 
-    #find-friend-img {
-        opacity: 0;
-        transition: 0.1s;
-    }
 
     div.buttons-block {
         margin-top: 0;       
@@ -575,17 +610,12 @@ a.main-buttons:hover {
         font-size: 110%;
     }
 
-    #find-friend-img {
-        opacity: 0;
-        transition: 0.1s;
-    }
 
     div.buttons-block {
         margin-top: 0;       
     }
 
 }
-
 
 
 @media all and (max-width: 830px) { 
@@ -597,13 +627,11 @@ a.main-buttons:hover {
         padding-right: 0;   
         margin-left: 20px;    
     }
-        
-        
+                
     div.main-text {
         margin-top: 20px;
         font-size: 100%;
     }
-
 
     div.logo-image-cat {            
         right: 380px;
@@ -611,7 +639,6 @@ a.main-buttons:hover {
         width: 100px;
         height: 50px;
     }
-
 
     div.logo-image-paw-left {    
         right: 605px;
@@ -625,13 +652,24 @@ a.main-buttons:hover {
         right: 0px;
         top: 15px;
         width: 40px;
-        aspect-ratio: 100/50;
         margin-left: 20px;
-        transform: rotate(70deg);    
     }
 
     div.buttons-block input{
         font-size: 80%;    
+    }
+
+    #find-friend-img {
+       right: 10px;
+        width: 270px;
+    }
+
+}
+
+@media all and (max-width: 750px) { 
+    
+    #find-friend-img {
+        opacity: 0;
     }
 
 }
@@ -642,6 +680,7 @@ a.main-buttons:hover {
     div.main-text {  
         font-size: 100%;
         margin: 10px;
+        margin-left: 0;
         padding: 0 0 0 20px;
     }
     div.buttons-block {
@@ -651,6 +690,8 @@ a.main-buttons:hover {
     div.buttons-block a{        
         flex: auto;    
     }
+
+    
        
 }
 

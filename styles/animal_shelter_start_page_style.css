@@ -46,7 +46,8 @@ button.buttons-main-image#right-button {
 #main-background {
     max-width: 1572px;
     aspect-ratio: 2.5/1;
-    overflow: hidden;     
+    overflow: hidden; 
+        
 }
 
 #main-background img{     
@@ -81,11 +82,30 @@ input.main-buttons:hover {
 
 /*-----------------------------------------------------media*/
 
+@media all and (max-width: 1800px) {
+
+     #main-background {    
+   
+    margin-left: 80px;
+    }
+      
+    
+
+}
+
+
+
+
 @media all and (max-width: 1700px) {
+
+     #main-background {    
+   
+    
+    }
       
     #main-background img{ 
         width: 105%;
-        transform: translateX(-50px);   
+       transform: translateX(-50px);  
     }
 
     button.buttons-main-image#left-button {
@@ -100,15 +120,44 @@ input.main-buttons:hover {
 }
 
 
+@media all and (max-width: 1550px) {
+
+     #main-background {
+        aspect-ratio: 2.5/1;    
+   margin-left: 0;
+    
+    }
+      
+    #main-background img{ 
+        width: 105%;
+       transform: translateX(-50px);  
+    }
+
+    button.buttons-main-image#left-button {
+        left: 0px;
+        z-index: 1;
+    }
+
+    button.buttons-main-image#right-button {
+        right: 0px;
+    }
+
+}
+
+
+
 @media all and (max-width: 1500px) {
 
     #main-background {    
-    aspect-ratio: 2.3/1;
+    aspect-ratio: 2.1/1;
+     margin-left: 0;
+   
     }
         
     #main-background img{  
         width: 110%;
-        transform: translate(-90px, 20px);
+       transform: translate(-90px, 0px);
+      
     }
 
 }
@@ -120,13 +169,13 @@ input.main-buttons:hover {
 
     #main-background img{  
         width: 110%;
-        transform: translate(-90px, 0px);
+      
     }
 
     
     #main-background { 
         background-size: 120%;
-        background-position: -150px 40px;
+       /* background-position: -150px 40px;*/
     }
  
 
@@ -145,13 +194,13 @@ input.main-buttons:hover {
     }
 
     #main-background {
-        aspect-ratio: 1.8/1;
+        aspect-ratio: 1.5/1;
        
     }
 
     #main-background img {
         width: 100%;
-        transform: translateY(140px);
+        transform: translateY(170px);
     }
 
     header.sub-header {

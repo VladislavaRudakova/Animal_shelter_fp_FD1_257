@@ -12,6 +12,10 @@ a {
     text-decoration: none;   
 }
 
+a:link {
+    color: inherit;
+}
+
 ::selection {
   background-color: lightgray; 
   color:white;     
@@ -74,6 +78,7 @@ header {
 
 
 header.sub-header {
+   
     height: 30px;
     width: 65%;
     position: absolute;
@@ -82,7 +87,7 @@ header.sub-header {
     background-color:  rgb(182, 144, 132);
      /*background-color:  rgb(69, 83, 35);*/
    
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 3;
 }
 
@@ -141,12 +146,22 @@ div#search-small-version {
 }
 
 button.sub-header-buttons {
-    border: none;
-    border-right: solid 1px white;
-    border-radius: 5px;
+   box-sizing: border-box;
+
+  border: none;
+   border-right:solid 1px white;;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background: none;
     text-transform: uppercase;
     color: white;
+    height: 100%;
+    padding-right: 10px;
+}
+
+button.sub-header-buttons:last-child {
+   border: none;
+    
 }
 
 input.header-buttons {
@@ -483,7 +498,6 @@ input#footer-mail-button {
 
     header {
         height: 50px;
-        
     }
 
    
@@ -554,16 +568,10 @@ input#footer-mail-button {
 }
 
 @media all and (max-width: 470px) {
-    
-    div.logo-sign-block {
-         
-    }
-
+   
     input[type="text"].search {
-   
-    margin-left: 0;
-   
-}
+       margin-left: 0;
+   }
 
 
 }

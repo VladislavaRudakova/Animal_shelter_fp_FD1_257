@@ -13,34 +13,37 @@ div.pets-miniatures {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    pointer-events: none;
 }
 
+@media (hover:hover) {
 
-div.pets-miniatures:hover div.pet-miniature.mini2 {
-    transform: translate(30px);
-    transition: 0.1s;
+    div.pets-miniatures:hover div.pet-miniature.mini2 {
+        transform: translate(30px);
+        transition: 0.1s;
+    }
+
+    div.pets-miniatures:hover div.pet-miniature.mini3 {
+        transform: translate(60px);
+        transition: 0.1s;
+    }
+
+    div.pets-miniatures:hover div.pet-miniature.mini4 {
+        transform: translate(90px);
+        transition: 0.1s;
+    }
+
+    div.pets-miniatures:hover div.pet-miniature.mini5 {
+        transform: translate(120px);
+        transition: 0.1s;
+    }
+
+    div.pets-miniatures:hover div.pet-miniatures-caption {
+        margin-left: 350px;
+        transition: 0.1s;
+    }   
+    
 }
-
-div.pets-miniatures:hover div.pet-miniature.mini3 {
-    transform: translate(60px);
-    transition: 0.1s;
-}
-
-div.pets-miniatures:hover div.pet-miniature.mini4 {
-    transform: translate(90px);
-    transition: 0.1s;
-}
-
-div.pets-miniatures:hover div.pet-miniature.mini5 {
-    transform: translate(120px);
-    transition: 0.1s;
-}
-
-div.pets-miniatures:hover div.pet-miniatures-caption {
-    margin-left: 350px;
-    transition: 0.1s;
-}
-
 
 div.pet-miniatures-cont {
     display: flex;   
@@ -58,20 +61,20 @@ div.pet-miniature {
 }
 
 div.pet-miniature.mini1 {
-    background-image: url('../images/Muha/2.jpg');
+    background-image: url('../images/stefy/2.jpg');
     background-size: 150%;
     background-position: -20px;    
 }
 
 div.pet-miniature.mini2 {
-    background-image: url('../images/Vulf/2.jpg');
+    background-image: url('../images/woolf/2.jpg');
     background-size: 150%;
     background-position: -20px;    
     left: 50px;    
 }
 
 div.pet-miniature.mini3 {
-    background-image: url('../images/Gloria/3.jpg');
+    background-image: url('../images/cat/3.jpg');
     background-size: 150%;
     background-position: -20px;    
     left: 80px;    
@@ -111,6 +114,7 @@ a#see-all {
     border-radius: 8px;
     border-color:rgba(70, 77, 39, 0.9);
     color:rgba(70, 77, 39);
+    pointer-events: auto;
 }
 
 

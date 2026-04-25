@@ -11,7 +11,7 @@ pets.forEach(pet=> {
                     <img class="pet-photo" src="${pet.avatarPhoto}">
                 </div>
                 <input type="hidden" name="id" value="${pet.id}">
-                <div class="pet-caption"><div>${pet.name}</div><div><div class="age-number">${pet.age.toString()}</div> ${getAgeDeclention(pet.age, declention)} </div></div>
+                <div class="pet-caption"><div class="highlight">${pet.name}</div><div><div class="age-number">${pet.age.toString()}</div> ${getAgeDeclention(pet.age, declention)} </div></div>
             </a>`    
 })
 petsContainer.innerHTML=content;
@@ -27,7 +27,6 @@ if (window.location.href.includes('animal_shelter_all_pets')) { // вывод в
     showAllPets(petsForAdoption);
     } else {
     const petsContainer = document.getElementById('slider-content');
-
    showAllPets(petsContainer);
 
 }
