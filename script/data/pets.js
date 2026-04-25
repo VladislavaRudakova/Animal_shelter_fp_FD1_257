@@ -71,11 +71,4 @@ const margosha = new Pet('1', 'кот','маргоша', 1, 'женский', ['
 
 
 
-
-
-
-
-
-//var pets = [stefy, loona, voolf, gloria];
-
 var pets = [stefy, woolf, loona, gloria, mimi, apelsin, margosha];

@@ -36,27 +36,38 @@ a:visited {
     z-index: -1;    
 }
 
-select, input[type="text"], textarea { 
-    appearance: none; 
-    padding: 0.5em;
-    border: none;
-    outline: solid 1px gray;
-    color: gray;
-    border-radius: 10px;
-  }
-
-
 select {     
-    background-image: url('../arrow.svg');
+    background-image: url('../images/arrow.svg');
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 1em;
 }
- 
+
+select, input[type="text"], textarea { 
+    appearance: none; 
+    padding: 0.5em;
+    border: none;
+    color: gray;
+    border-radius: 10px;
+    outline: solid 1px lightgray;
+    height: 1.7em;
+   
+  }
+
 
 select:focus, input[type="text"]:focus {
     cursor: pointer;
-    outline-color: gray;  
+    border: none;
+    outline-color: rgb(153, 153, 153);
+   
+     
+}
+
+select:active, input[type="text"]:active {
+    cursor: pointer;
+    border: none;
+    outline-color: rgb(153, 153, 153);
+     
 }
 
 /*------------------------------------------------------------header*/
@@ -86,7 +97,6 @@ header.sub-header {
     left: 80px;
     background-color:  rgb(182, 144, 132);
      /*background-color:  rgb(69, 83, 35);*/
-   
     border-radius: 10px;
     z-index: 3;
 }
@@ -550,6 +560,13 @@ input#footer-mail-button {
 
 
 @media all and (max-width: 550px) {
+
+    footer {
+    
+    padding: 30px;
+    padding-top: 50px;
+   
+}
 
     div.mail-message {
         flex-direction: column;

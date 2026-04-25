@@ -11,11 +11,11 @@ class CustomHeader extends HTMLElement {
         <div class="header-fields">
             <form id="subscribe">
               <span class="form-caption">подписаться на новости</span>
-              <input class="search" type="text" placeholder="введите e-mail">
+              <input class="search" type="text" name="subscribe" placeholder="введите e-mail">
               <input class="header-buttons" type="submit" value="подписаться">
             </form>
             <form id="main-search">
-              <input class="search" type="text" placeholder="поиск">
+              <input class="search" type="text" name="search" placeholder="поиск">
               <button class="header-buttons" id="main-search-button" type="submit"><div><custom-icon name="search"></custom-icon><div></button>
             </form>
         </div>

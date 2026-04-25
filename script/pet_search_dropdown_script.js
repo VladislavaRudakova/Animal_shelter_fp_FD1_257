@@ -23,3 +23,13 @@ characterChoiceButton.onclick=function() {
     subDropdownCharacter.classList.toggle('cont-is-open');
     
 }
+
+window.addEventListener('click', (event) => {  
+  if (subDropdownColor.classList.contains('cont-is-open') && !subDropdownColor.contains(event.target) && !colorChoiceButton.contains(event.target)) {
+    subDropdownColor.classList.remove('cont-is-open');
+  }
+
+  if (subDropdownCharacter.classList.contains('cont-is-open') && !subDropdownCharacter.contains(event.target) && !characterChoiceButton.contains(event.target)) {
+    subDropdownCharacter.classList.remove('cont-is-open');
+  }
+});

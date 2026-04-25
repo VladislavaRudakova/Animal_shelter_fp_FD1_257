@@ -261,11 +261,42 @@ div.picture-title-cont {
 
 div.small-version-ref {
     align-self: end;
+    
     margin: 30px;
     margin-right: 50px;
     font-size: 120%;
     color: #762D00;
+    
 }
+
+div.small-version-ref a{
+    display: flex;
+    align-items: center;
+    gap: 3px;   
+}
+
+div.small-version-ref a:hover div:first-child{
+    border-bottom: solid 1px rgba(118, 45, 0, 0.5);
+    transition: 0.2s;
+}
+
+div.small-version-ref a>div:last-child {
+   width: 15px;
+   height: 15px;
+}
+
+
+div.small-version-ref a>div:first-child {
+   line-height: 1em;
+   border-bottom: solid 1px #762d0000;
+
+}
+
+
+div.small-version-ref.hidden-small-version-text {
+    display: none;
+}
+
 
 div.small-version-title {
     font-size: 110%;

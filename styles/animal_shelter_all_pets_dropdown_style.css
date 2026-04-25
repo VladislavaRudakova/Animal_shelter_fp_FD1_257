@@ -66,35 +66,19 @@ div.title {
 
 /*------------------------------------------------selects--*/
 
-select { 
-    appearance: none;
-    background-image: url('../arrow.svg');
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-    background-size: 1em;
-  }
- 
 
-select:hover {
-    cursor: pointer;
-    border-color: rgb(153, 70, 70);  
-}
 
 select#pet-kind, select#pet-age, select#pet-sex  {
     padding: 0.5em;
-    border: solid 1px lightgray;
-    color: gray;
+    /*border: solid 1px lightgray;*/   
     border-radius: 10px;
     flex: auto;
     margin-left: 30px;
+    box-sizing: content-box;
 }
 
-select:focus {
-    cursor: pointer;
-    outline-color: gray;  
-}
 
-div.features>div, label {
+div.features>div, form#pet-search-form label {
    text-transform: uppercase;
    color: gray;
    font-size: 90%;    
@@ -108,9 +92,8 @@ div.features-title:hover {
     cursor: pointer;
 }
 
-div.arrow-main {   
-    top: 2em;
-    right: 2em;
+div.arrow-main { 
+    color: rgb(153, 153, 153);
     width: 1.5em;
     height: 1.5em;    
     background-image: url('../arrow.svg');
@@ -170,6 +153,10 @@ div#color-select-cont, div#character-select-cont {
     grid-template-columns: 1fr;
     transition: grid-template-rows 0.1s ease-in-out;
     overflow: hidden;   
+}
+
+ div#character-select-cont {
+    right: 250px;
 }
 
 div.features ul{    
@@ -294,23 +281,38 @@ form#pet-search-form>div:last-child button{
 }
 
 form#pet-search-form>div:last-child button div{
-   
-         
     width: 1em;
     height: 1em;
 }
 
-form#pet-search-form>div:last-child input:hover, form#pet-search-form>div:last-child button:hover{     
-   background-color: rgba(202, 153, 140, 0.8);
-   outline-color:  rgba(202, 153, 140, 0.8);  
-   border-radius: 8px;
-   color: #ffffff;
-   text-transform: uppercase;
-   padding: 0.5em 1em 0.5em 1em;
+@media (hover: hover) {
+
+    form#pet-search-form>div:last-child input:hover{     
+        background-color: rgba(202, 153, 140, 0.8);
+        outline-color:  rgba(202, 153, 140, 0.8);  
+        border-radius: 8px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    form#pet-search-form>div:last-child button:hover{     
+        background-color: rgba(201, 201, 201, 0.8);
+        outline-color:  rgba(201, 201, 201, 0.8);  
+        border-radius: 8px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+
 }
 
 
-
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: rgb(255, 255, 255);
+}
 
 /*-------------------------------------------------------*/
 

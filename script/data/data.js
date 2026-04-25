@@ -11,10 +11,10 @@ const stefy1=`У Стэфи могла быть совсем другая суд
 Даже если вы пока не готовы завести питомца, вы можете помочь! Отошлите ссылку на анкету Стэфи друзьям, 
 расскажите о ней знакомым. Возможно, среди них находится тот, кто мечтает сделать ее своей домашней.`
 
-const stefyPhotos=['images/Stefy/1.jpg', 'images/Stefy/2.jpg', 'images/Stefy/3.jpg', 'images/Stefy/4.jpg', 'images/Stefy/5.jpg'];
+const stefyPhotos=['images/stefy/1.jpg', 'images/stefy/2.jpg', 'images/stefy/3.jpg', 'images/stefy/4.jpg', 'images/Stefy/5.jpg'];
 
-const stefyAccPhoto = ['images/Stefy/1.jpg']
-const stefyBackPhoto = ['images/Stefy/3.jpg']
+const stefyAccPhoto = ['images/stefy/1.jpg']
+const stefyBackPhoto = ['images/stefy/3.jpg']
 
 //-------------------------------------------------------------------woolf
 

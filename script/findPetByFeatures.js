@@ -1,5 +1,5 @@
 
-/*функции поиска питомца по особенностям*/
+/*функции поиска питомца по особенностям (не закончено) */
 
 
 //const petKind = document.getElementById('pet-kind');
@@ -32,7 +32,7 @@ console.log(el + ' CHECKED!');
 
 
 //----------------------------------------------------------------------
-
+//var result={};
 
 searchForm.addEventListener('submit', (event) => { 
     event.preventDefault();
@@ -56,26 +56,23 @@ searchForm.addEventListener('submit', (event) => {
 function findAge(age, pet, petsFound) {
     switch(age) {
         case 'меньше 1':
-            if(pet.age<1){petsFound.add(pet)};
+            if(pet.age<1){petsFound.push(pet)};
             break;
         case '1-4':
-            if(pet.age>=1&&pet.age<=4){petsFound.add(pet)};
+            if(pet.age>=1&&pet.age<=4){petsFound.push(pet)};
             break;
         case '5-8':
-            if(pet.age>=5&&pet.age<=8){petsFound.add(pet)};
+            if(pet.age>=5&&pet.age<=8){petsFound.push(pet)};
              break;
         case 'больше 8':
-            if(pet.age>8){petsFound.add(pet)};
+            if(pet.age>8){petsFound.push(pet)};
              break;
     }
 }
 
-
-
-
 //----------------------------------------------------------------------
 
-const petsFound = Set();
+var petsFound = [];
 
 function findPetByFeatures (formData, pets, petsFound) {
 pets.forEach(pet=>{
@@ -84,7 +81,15 @@ if(formData.kind===pet.kind&&formData.sex===pet.sex) {
     findAge(formData.age, pet, petsFound);
 }
 
-})
-    
+})    
 
 }
+
+
+const findPetButton = document.getElementById('find-pet');
+const petsForAdoption = document.getElementById('pets-for-adoption');
+
+
+
+    
+

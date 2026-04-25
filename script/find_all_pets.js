@@ -2,7 +2,7 @@
 
 
 
-function showAllPets(petsContainer) {
+function showAllPets(petsContainer, pets) {
     var content = '';
     let declention='';
 pets.forEach(pet=> {
@@ -20,14 +20,13 @@ petsContainer.innerHTML=content;
 
 
 
-
 if (window.location.href.includes('animal_shelter_all_pets')) { // вывод в разные контейнеры в зависимости от страницы
     const petsForAdoption = document.getElementById('pets-for-adoption');
 
-    showAllPets(petsForAdoption);
+    showAllPets(petsForAdoption, pets);
     } else {
     const petsContainer = document.getElementById('slider-content');
-   showAllPets(petsContainer);
+   showAllPets(petsContainer,pets);
 
 }
 
