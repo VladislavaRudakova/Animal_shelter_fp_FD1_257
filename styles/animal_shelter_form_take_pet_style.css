@@ -31,10 +31,18 @@ div#main-first-block {
 
 /*------------------------------------------form*/
 
+#form-title {
+    margin-top: 40px;
+}
+
+
 select {
-    display: block;
-    
+    display: block;    
     width: 100%;   
+}
+
+textarea{
+    box-sizing: content-box;
 }
 
 
@@ -112,7 +120,7 @@ div.form-container {
     flex: 500px 1 1;
     background-color: white;
     border-radius: 20px;
-    margin-top: 40px;    
+    margin-top: 30px;    
     display: flex;   
     padding: 50px;
     align-items: center;
@@ -335,17 +343,12 @@ div.form-2 .form div.radio div  {
     flex: 250px 0 0;
     }
 
-
-
     div.name-data>div:last-child {
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
     }
-
-
-    
-
+   
     div#form-title {
         font-size: 230%;
         margin-left: 40px;
@@ -363,6 +366,7 @@ div.form-2 .form div.radio div  {
 }
 
 @media all and (max-width:800px) {
+
     div.form-container { 
         flex-direction: column;
         align-items: center;
@@ -380,7 +384,6 @@ div.form-2 .form div.radio div  {
         height: 100%;
         padding-right: 0;
     }
-
 
     div.scructure-block {
         display: flex;
@@ -438,6 +441,13 @@ div.form-2 .form div.radio div  {
         margin-bottom: 0;
         background-size: 180%;
     }
+
+
+  div.pet-selection label {
+        display: block;
+
+    }
+
 
 
 @media all and (max-width:400px) {

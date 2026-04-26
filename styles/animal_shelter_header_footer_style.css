@@ -405,6 +405,7 @@ div.mail-message {
 
 div#text-message {
     flex: auto;
+   
 }
 
 input#subscribe-field {
@@ -415,6 +416,8 @@ input#subscribe-field {
     border-radius: 8px;
     padding: 10px;
     color: lightgray;
+    margin-right: 10px;
+    outline: none;
 }
 
 textarea#mail-text {
@@ -427,6 +430,9 @@ textarea#mail-text {
     padding: 10px;  
     color: lightgray;
     resize: vertical;
+    margin-right: 10px;
+    outline: none;
+    box-sizing: border-box;
 }
 
 textarea#mail-text:focus {   
@@ -517,8 +523,7 @@ input#footer-mail-button {
        background-size: 160%;
     }
 
-        div#main-first-block {
-       
+    div#main-first-block {       
         margin-top: 5px;
     }
 
@@ -526,18 +531,21 @@ input#footer-mail-button {
         gap: 5px;
         margin-left: 20px;       
         border-radius: 20px;
-        
     }
 
     div.logo {
        width: 75px;
-       aspect-ratio: 12/5;
-        
+       aspect-ratio: 12/5;        
     }
     
     div.sign {    
-    width: 25px;
-   
+        width: 25px;   
+    }
+
+    div#form-title {
+        font-size: 250%;
+        color: #762D00;
+        margin-top: 0px;
 }
     
 }

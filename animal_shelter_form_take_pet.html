@@ -38,18 +38,10 @@
 
 
         <form id="take-pet-form">
-
-
             <div class="form-container">              
                 <div class="right-block first-card">
-
                     <div class="form-photo">
-                        
-                        
                     </div>
-
-
-
                 </div> 
                 <div class="scructure-block first-card-text">
                     
@@ -63,14 +55,13 @@
                 </div>           
             </div>        
 
-
             <div class="form-container">              
                 <div class="right-block">
                     <div class="pet-selected">
-                        <div>
-                            <label>имя питомца</label>
-                            <input type="text" placeholder="имя питомца">
-                            <a>выбрать</a>
+                        <div id="pet-selection">
+                            <label id="name" for="pet-name">имя питомца</label><br>
+                            <input type="text" name="pet-name" placeholder="имя питомца">
+                        <button class="pet-selection"><a>выбрать</a></button>
                         </div>
                         
                     </div>
@@ -79,42 +70,40 @@
                     <div id="mini-photo"></div>
                     <div id="question">напишите&nbsp;имя&nbsp;питомца, которого хотите забрать домой</div>
                 </div>           
-            </div>        
+            </div>     
 
-
-
-       <div class="form-container">              
-            <div class="right-block">
-                <div class="name-data">
-                    <div>
-                        <label>ваше имя</label>
-                        <input type="text" placeholder="имя">
-                    </div>
-                    <div>
-                        <label>ваша фамилия</label>
-                        <input type="text" placeholder="фамилия">
-                    </div>
-                    <div>
-                        <label>ваш возраст</label>
-                        <input type="text" placeholder="город">
-                    </div> 
-                    <div>
+            <div class="form-container">              
+                <div class="right-block">
+                    <div class="name-data">
                         <div>
-                            <label>номер телефона</label>
-                            <input type="text" placeholder="номер телефона">
+                            <label>ваше имя</label>
+                            <input type="text" placeholder="имя">
                         </div>
                         <div>
-                            <label>e-mail</label>
-                            <input type="text" placeholder="e-mail">
+                            <label>ваша фамилия</label>
+                            <input type="text" placeholder="фамилия">
+                        </div>
+                        <div>
+                            <label>ваш возраст</label>
+                            <input type="text" placeholder="город">
+                        </div> 
+                        <div>
+                            <div>
+                                <label>номер телефона</label>
+                                <input type="text" placeholder="номер телефона">
+                            </div>
+                            <div>
+                                <label>e-mail</label>
+                                <input type="text" placeholder="e-mail">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div> 
-            <div class="scructure-block">
-                <div id="mini-photo"></div>
-                <div id="question">напишите&nbsp;ваше&nbsp;имя,&nbsp;фамилию и&nbsp;город&nbsp;проживания</div>
-            </div>           
-        </div>
+                </div> 
+                <div class="scructure-block">
+                    <div id="mini-photo"></div>
+                    <div id="question">напишите&nbsp;ваше&nbsp;имя,&nbsp;фамилию, город&nbsp;проживания, номер&nbsp;телефона и e-mail для связи</div>
+                </div>           
+            </div>
       
 <!----------------------------------------------------------------------form2-->
         <div class="form-container">              
@@ -158,8 +147,8 @@
             </div> 
             <div class="scructure-block">
                 <div id="mini-photo"></div>
-                <div id="question">вы живете в квартире или в частном доме, 
-                    сколько человек в семье, где будет жить ваш будущий питомец?</div>
+                <div id="question">вы живете в квартире или в частном доме? 
+                    сколько человек в семье, где будет жить ваш питомец?</div>
             </div>           
         </div>
 <!----------------------------------------------------------------------form3-->
@@ -188,7 +177,7 @@
             </div> 
             <div class="scructure-block">
                 <div id="mini-photo"></div>
-                <div id="question">напишите&nbsp;ваше&nbsp;имя,&nbsp;фамилию и&nbsp;город&nbsp;проживания</div>
+                <div id="question">Расскажите о своих домашних питомцах</div>
             </div>           
         </div>
 
@@ -223,7 +212,7 @@
             </div> 
             <div class="scructure-block">
                 <div id="mini-photo"></div>
-                <div id="question">напишите&nbsp;ваше&nbsp;имя,&nbsp;фамилию и&nbsp;город&nbsp;проживания</div>
+                <div id="question">Кто вы по профессии? Расскажите еще какие-нибудь факты о себе</div>
             </div>           
         </div>
         </form>

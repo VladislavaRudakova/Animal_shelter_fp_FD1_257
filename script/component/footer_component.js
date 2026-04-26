@@ -38,9 +38,9 @@ class CustomFooter extends HTMLElement {
                     <div class="social-icons" id="facebook"><custom-icon name="facebook"></custom-icon></div>
                 </div>
                 <form class="footer-mail-form">
-                    <label class="footer-title">подпишитесь на новости</label>
+                    <label for="mail-field-footer" class="footer-title">подпишитесь на новости</label>
                     <div class="mail-message">
-                        <input id="subscribe-field" type="text" id="mail-field-footer" placeholder="введите e-mail">
+                        <input id="subscribe-field" type="text" name="mail-field-footer" placeholder="введите e-mail">
                         <input class="header-buttons" id="footer-mail-button" type="submit" value="подписаться">
                     </div> 
                 </form>     
