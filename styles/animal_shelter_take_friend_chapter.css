@@ -8,6 +8,7 @@ div#take-friend {
 }
 
 div.take-friend-stages {
+    position: relative;
     flex: 300px 1 0;
     display: flex;
     flex-direction: column;
@@ -92,9 +93,62 @@ div.take-friend-text {
     padding-left: 40px;
 }
 
+
+div.arrow-art {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+   right: -80px;
+   bottom: 30px;
+   z-index: 20;
+   transform: rotate(-10deg);
+}
+
+div.arrow-art custom-illustration {
+    color: rgb(157, 161, 138);
+}
+
+
 @media all and (max-width:1200px) {
     div#take-friend {
     flex-wrap: wrap;    
+}
+
+}
+
+
+@media all and (max-width:1054px) {
+    div.take-friend-stages {
+   flex-wrap: wrap;
+
+}
+div.arrow-art.second {
+    width: 100px;
+    height: 50px;
+    right: 50px;
+    bottom: -50px;
+    z-index: 20;
+    
+    transform: rotate(100deg) scaleY(-1) scale(0.9);
+   
+              
+}
+
+}
+
+@media all and (max-width:700px) {
+
+div.take-friend-stages {
+   flex-wrap: wrap;
+}
+
+div.arrow-art.first {
+    width: 100px;
+    height: 50px;
+    right: 40px;
+    bottom: -50px;
+    z-index: 20;
+    transform: rotate(100deg) scaleY(-1) scale(0.8);
 }
 
 }
@@ -103,7 +157,6 @@ div.take-friend-text {
     div.take-friend-stages {
     flex: auto 1 1;    
     padding: 40px 40px 40px 40px;
-   
 }
 
 div.take-friend-title {    

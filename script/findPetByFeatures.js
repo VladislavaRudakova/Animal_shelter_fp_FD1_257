@@ -87,7 +87,7 @@ if(formData.kind===pet.kind&&formData.sex===pet.sex) {
 
 
 const findPetButton = document.getElementById('find-pet');
-const petsForAdoption = document.getElementById('pets-for-adoption');
+//const petsForAdoption = document.getElementById('pets-for-adoption');
 
 
 

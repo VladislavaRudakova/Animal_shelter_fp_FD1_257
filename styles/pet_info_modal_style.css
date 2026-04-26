@@ -15,7 +15,6 @@ div#modal {
 
 
 div#modal.modal-open {
-    
     display: flex;
 }
 
@@ -26,7 +25,7 @@ div#modal-message {
     justify-content: flex-start;
     align-items: center;    
     flex: 450px 0 0;
-    height: 300px;
+    height: 150px;
     background-color: rgba(255, 255, 255, 0.95);    
     border-radius: 20px;
     gap: 40px;   
@@ -42,7 +41,23 @@ div#modal-social {
 }
 
 div#modal-close {
-    height: 20px;
+    height: 15px;
+    
+    width: 100%;
+    position: relative;
+}
+
+div#modal-close custom-icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: gray;
+}
+
+div#modal-close custom-icon:hover {
+    cursor: pointer;
 }
 
 div#modal-social-icons {
@@ -60,7 +75,7 @@ div#modal-social-icons div{
 
 div#modal-social-icons div:hover{
     cursor: pointer;
-    color: brown;
+    color: rgba(177, 86, 63, 1);;
     
 }
 

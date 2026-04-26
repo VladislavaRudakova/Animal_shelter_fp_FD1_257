@@ -51,7 +51,8 @@ button.buttons-main-image#right-button {
 }
 
 #main-background img{     
-      width: 100%;     
+      width: 100%;
+      height: auto;     
 }
 
 input.main-buttons {

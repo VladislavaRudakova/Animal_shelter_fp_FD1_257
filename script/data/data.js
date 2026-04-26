@@ -109,7 +109,7 @@ const apelsinText=`Не каждый кот мечтает о спасении, 
 всю свою нежность. Заполните анкету, если вы готовы проявить терпение и заботу! 
 Даже если вы пока не готовы завести питомца, вы можете помочь! Отошлите ссылку на анкету Апельсина друзьям, расскажите о нем знакомым. Возможно, среди них находится тот, кто мечтает сделать его своим домашним.`
 
-const apelsinPhotos=['images/apelsin/1.jpg', 'images/apelsin/2.jpg', 'images/apelsin/3.jpg', 'images/apelsin/4.jpg', 'images/mimi/5.jpg'];
+const apelsinPhotos=['images/apelsin/1.jpg', 'images/apelsin/2.jpg', 'images/apelsin/3.jpg', 'images/apelsin/4.jpg', 'images/apelsin/5.jpg'];
 
 const apelsinAccPhoto = 'images/apelsin/3.jpg'
 const apelsinBackPhoto = 'images/apelsin/5.jpg'

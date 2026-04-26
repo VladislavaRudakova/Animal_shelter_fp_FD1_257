@@ -13,6 +13,7 @@ header.sub-header {
 div#main-first-block {
     display: flex;
     justify-content: end;
+   
 }
 
 #main {
@@ -26,6 +27,7 @@ div#main-first-block {
 
 div.articles {    
     flex: 300px 0 1;
+    margin-right: 80px;
 }
 
 a.article {    
@@ -34,6 +36,7 @@ a.article {
     background-color: rgb(255, 255, 255, 0.3);
     border: solid 1px rgb(255, 255, 255, 1);
     margin: 40px;
+    margin-top: 80px;
     margin-bottom: 0;
     padding: 20px;
     border-radius: 25px;   
@@ -90,11 +93,11 @@ div.article-cont {
     display: flex;
     flex-direction: column;
     padding: 50px;
+    padding-bottom: 80px;
     align-items: center;
 }
 
-div.article-cont #share-button {
-   
+div.article-cont #share-button, #heart-button {
     padding: 1em 1.5em 1em 1.5em;
     border: none;
     outline: solid 1px rgba(177, 86, 63, 1);
@@ -108,11 +111,25 @@ div.article-cont #share-button {
     align-self: flex-end;
 }
 
-div.article-cont #share-button div {
+div.article-cont #heart-button {
+    position: relative;
+}
+
+
+div.article-cont #share-button div, #heart-button div{
    width: 20px;
    height: 20px;
 }
 
+div.article-cont #heart-button div#heart {
+  position: absolute;
+  
+}
+
+div.article-cont #heart-button div#stroke-heart {
+  color: rgba(177, 86, 63, 1);
+  
+}
 
 div.article-title {
     display: flex;
@@ -158,6 +175,10 @@ div#author-avatar {
     border: none;
 }
 
+div#author-data {
+    text-align: center;
+}
+
 div#author-name {
     font-size: 170%;
     font-weight: 700;
@@ -193,32 +214,39 @@ div.article-cont .highlight{
     font-weight: 600;
 }
 
+
+@media all and (max-width:1700px) {
+
+    div.articles { 
+    margin-right: 0;
+}
+
+}
+
+
 @media all and (max-width:1300px) {
 
-div#main-first-block {
-    justify-content: center;
-}
+    div#main-first-block {
+        justify-content: center;
+    }
 
 
+    div.articles {
+        display: none;
+    }
 
-div.articles {
-    display: none;
-}
-
-div.article-cont {
-    width: 100%;
-}
+    div.article-cont {
+        width: 100%;
+    }
 
 }
 
 
 
 @media all and (max-width:1000px) {
-div.article-cont {
-   
-    margin-top: 5px;
-    
-}
+    div.article-cont {   
+        margin-top: 5px;    
+    }
 
 
 }
@@ -253,14 +281,31 @@ div.article-cont {
         font-size: 140%;
     }
 
+   
 
 }
 
+@media all and (max-width:650px) {
+    
+
+    div#article-title {
+        font-size: 125%;
+    }
+
+div.article-cont #share-button div, #heart-button div{
+   width: 15px;
+   height: 15px;
+}
+div.article-cont #share-button, #heart-button{
+   padding: 0.7em 1em 0.7em 1em;
+}
+
+}
 
 @media all and (max-width:500px) {
     
     div#article-title {
-        font-size: 130%;
+        font-size: 120%;
     }
 
     div#author-data {
@@ -274,7 +319,7 @@ div.article-cont {
     }
 
     div.quoute p {
-        font-size: 90%;
+        font-size: 100%;
     }
 
     div.article-cont {
@@ -287,7 +332,7 @@ div.article-cont {
 @media all and (max-width:420px) {
     
     div#article-title {
-        font-size: 130%;
+        font-size: 120%;
     }
 
     div#author-data {

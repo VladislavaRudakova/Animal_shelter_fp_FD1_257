@@ -200,8 +200,6 @@ div.illustration-image {
     justify-content: center;
     width: 75%;
     height: 75%;
-     
-    
 }
 
 custom-illustration {
@@ -212,7 +210,7 @@ custom-illustration.illustration-cheked {
     color: rgb(118, 45, 0);
 }
 
-
+@media(hover: hover) {
 div.illustration:hover {
     cursor: pointer;
     background-color: rgb(229, 202, 192);
@@ -220,7 +218,7 @@ div.illustration:hover {
     transform: scale(1.05);
     transition: 0.2s;
 }
-
+}
 div.illustration.cheked2 {
     
    background: none;  
@@ -532,96 +530,95 @@ div#hidden-info-block-container.visible {
 
 @media all and (max-width:700px) {
 
-div#hidden-info-block-container {
-    display: none;  
-}
+    div#hidden-info-block-container {
+        display: none;  
+    }
 
-div.illustration {
-    flex: 110px 0 0;
-    box-sizing: border-box;   
-    height: 130px;
-    margin: 0;
-    margin-left: 40px;
-    pointer-events: none;
-    background: none;  
-    transition: 0.3s;
-}
-   
-div.illustrated-menu-block {   
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-div#illustrated-menu{   
-    box-sizing: border-box;
-    flex-direction: column;
-    width: 100%;
-    padding: 30px;
-    transition: 0.2s;
-   
-}
-
- div.illustration-container {
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #CA9481;
-    flex-direction: row;
+    div.illustration {
+        flex: 110px 0 0;
+        box-sizing: border-box;   
+        height: 130px;
+        margin: 0;
+        margin-left: 40px;
+        pointer-events: none;
+        background: none;  
+        transition: 0.3s;
+    }
     
-    align-items: center;
-    justify-content: start;
-    border-radius: 8px;
-    transition: 0.1s;
-    margin-bottom: 20px;    
-}
+    div.illustrated-menu-block {   
+        width: 100%;
+        box-sizing: border-box;
+    }
 
 
-div.illustration-container:hover {
-    cursor: pointer;
-    background-color: rgb(229, 202, 192);
-    box-shadow: 1px 1px 10px 2px rgba(229, 202, 192, 0.5);
-    transform: scale(1.01);
-    transition: 0.2s;
-}
-
-
-
-div.illustration-container.checked-small {    
-    background-color: rgb(255, 255, 255);
-    height: auto;
-    flex-direction: column;
+    div#illustrated-menu{   
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+        transition: 0.2s;
     
+    }
+
+    div.illustration-container {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #CA9481;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        border-radius: 8px;
+        transition: 0.1s;
+        margin-bottom: 20px;    
+    }
+
+@media (hover: hover) {
+    div.illustration-container:hover {
+        cursor: pointer;
+        background-color: rgb(229, 202, 192);
+        box-shadow: 1px 1px 10px 2px rgba(229, 202, 192, 0.5);
+        transform: scale(1.01);
+        transition: 0.2s;
+    }
+
 }
 
-div.illustration-container.checked-small div.picture-title-cont {    
-    width: 100%;
-    
-}
+    div.illustration-container.checked-small {    
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        flex-direction: column;
+        
+    }
 
-div.illustration-container.checked-small div.small-version-title {    
-    width: 100%;
-    text-align: center;
-    
-}
+    div.illustration-container.checked-small div.picture-title-cont {    
+        width: 100%;
+        
+    }
 
-div.illustration-container.checked-small div.illustration {    
-    flex: 110px 0 0;
-    
-}
+    div.illustration-container.checked-small div.small-version-title {    
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    div.illustration-container.checked-small div.illustration {    
+        flex: 110px 0 0;
+        
+    }
 
 
 
-div.illustration-container.checked-small:hover {
-    box-shadow: none;
-    transform: none;
-}
+    div.illustration-container.checked-small:hover {
+        box-shadow: none;
+        transform: none;
+    }
 
-div.illustration-caption {
-    color: white;
-    font-size: 100%;
-    font-weight: 500;
-    flex: auto;
-}
+    div.illustration-caption {
+        color: white;
+        font-size: 100%;
+        font-weight: 500;
+        flex: auto;
+    }
 
 }
 
@@ -637,13 +634,9 @@ div.illustration-caption {
    div.small-version-title {
     font-size: 115%;
     margin-left: 10px;
-  
-   
-  
 }
 
-div.illustration-container {      
-      
+div.illustration-container { 
        gap: 30px;        
     }
 }
@@ -652,10 +645,14 @@ div.illustration-container {
 
    div.illustration-container {      
        font-size: 80%;
-       gap: 10px;        
+       gap: 0px;        
     }
-}
 
+    div.illustration {
+        margin-left: 20px;
+    }
+
+}
 
 
 

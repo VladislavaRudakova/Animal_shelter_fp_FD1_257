@@ -51,9 +51,11 @@ div#cat-paw-block {
 div.logo-image-cat {
     position: absolute;
     right: 300px;
-    top: -60px;
-    width: 100px;
-    height: 50px;
+    top: -50px;
+   /* width: 100px;
+    height: 50px;*/
+    width: 170px;
+    height: 55px;
 }
 
 div.logo-image-paw-left {
@@ -78,8 +80,8 @@ div.logo-image-paw-right custom-illustration {
 
 
 div.logo-image-paw-right {
-   position: absolute;
-    right: 150px;
+    position: absolute;
+    right: 175px;
     top: 100px;
     width: 90px;
     aspect-ratio: 100/50;
@@ -229,6 +231,12 @@ a.main-buttons:hover {
         right: -30px;   
     }
 
+    div.logo-image-paw-right {
+   
+    right: 195px;
+    top: 85px;
+    }
+
     div.logo-image-paw-left {    
         right: 350px;
         top: 10px;
@@ -354,9 +362,9 @@ a.main-buttons:hover {
 
 
     div.logo-image-cat {       
-        right: 280px;
+        right: 250px;
         top: -45px;
-        width: 100px;
+        width: 170px;
         height: 50px;
     }
 
@@ -365,13 +373,13 @@ a.main-buttons:hover {
         right: 320px;
         top: 10px;
         width: 100px;
-        height: 50px;
+        height: 45px;
     }
 
     div.logo-image-paw-right {    
-        right: 130px;
+        right: 165px;
         top: 80px;
-        width: 100px;
+        width: 80px;
         aspect-ratio: 100/50;
     }
 
@@ -409,9 +417,9 @@ a.main-buttons:hover {
     }
 
     div.logo-image-paw-right {    
-        right: 130px;
-        top: 80px;
-        width: 90px;
+        right: 140px;
+        top: 75px;
+        width: 85px;
         aspect-ratio: 100/50;
     }
 
@@ -481,6 +489,7 @@ a.main-buttons:hover {
 
     div#text-buttons-block {
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -516,8 +525,7 @@ a.main-buttons:hover {
 
     div.logo-image-cat {
         position: static;        
-        width: 100px;
-        height: 50px;
+       
     }
 
     div.logo-image-paw-left {
@@ -530,9 +538,9 @@ a.main-buttons:hover {
     div.logo-image-paw-right {
         position: relative;   
         right: 0px;
-        top: 15px;
+        top: 25px;
         width: 90px;
-        height: 45px;
+        height: 43px;
         aspect-ratio: 100/50;  
     }
 
@@ -570,8 +578,8 @@ a.main-buttons:hover {
 
     #find-friend-img {   
         top: 15px;
-        right: 40px;
-       
+        right: 20px;
+       width: 280px;
     }
 
     div.main-text { 
@@ -621,7 +629,7 @@ a.main-buttons:hover {
 @media all and (max-width: 830px) { 
     
     div#logo-text {  
-        flex: 270px 0 1;
+        flex: 0.4 ;
         font-size: 270%;
         padding: 20px;
         padding-right: 0;   
@@ -633,25 +641,23 @@ a.main-buttons:hover {
         font-size: 100%;
     }
 
-    div.logo-image-cat {            
-        right: 380px;
-        top: 0px;
-        width: 100px;
-        height: 50px;
+    div.logo-image-cat { 
+       margin-bottom: 15px;
+        
     }
 
     div.logo-image-paw-left {    
         right: 605px;
         top: 90px;
         width: 40px;
-        height: 50px;
+        height: 37px;
         margin-left: 20px;   
     }
 
     div.logo-image-paw-right {    
-        right: 0px;
-        top: 15px;
-        width: 40px;
+        right: 7px;
+        top: 20px;
+        width: 35px;
         margin-left: 20px;
     }
 
@@ -699,7 +705,7 @@ a.main-buttons:hover {
 @media all and (max-width: 550px) {
 
         div#logo-text {    
-        flex: 270px 0 1;
+       
         font-size: 230%;
         padding: 20px;
         padding-right: 0;   

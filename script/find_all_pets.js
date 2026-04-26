@@ -10,8 +10,8 @@ pets.forEach(pet=> {
                 <div class="pet-photo" style="background-image: url(${pet.avatarBackPhoto})">
                     <img class="pet-photo" src="${pet.avatarPhoto}">
                 </div>
-                <input type="hidden" name="id" value="${pet.id}">
-                <div class="pet-caption"><div class="highlight">${pet.name}</div><div><div class="age-number">${pet.age.toString()}</div> ${getAgeDeclention(pet.age, declention)} </div></div>
+                <input class="pet-id" type="hidden" name="id" value="${pet.id}">
+                <div class="pet-caption name"><div class="highlight">${pet.name}</div><div><div class="age-number">${pet.age.toString()}</div> ${getAgeDeclention(pet.age, declention)} </div></div>
             </a>`    
 })
 petsContainer.innerHTML=content;
@@ -20,15 +20,34 @@ petsContainer.innerHTML=content;
 
 
 
+
+
+
+
+    
+    
+
+
 if (window.location.href.includes('animal_shelter_all_pets')) { // вывод в разные контейнеры в зависимости от страницы
     const petsForAdoption = document.getElementById('pets-for-adoption');
-
     showAllPets(petsForAdoption, pets);
+    const photos1 = petsForAdoption.querySelectorAll('.pet');
+    console.log(photos1+' PHOTOS FOUND')
+   
+    movePhoto1(photos1,'2', -150);
+    movePhoto1(photos1,'7', -120);
+
     } else {
     const petsContainer = document.getElementById('slider-content');
-   showAllPets(petsContainer,pets);
-
+const photos = petsContainer.querySelectorAll('.pet');
+    showAllPets(petsContainer,pets);
+     movePhoto1(photos,'2', -150);
+    movePhoto1(photos,'7', -120);
 }
+    
+    
+
+
 
 
 function getAgeDeclention(number, declention) { // определение склонения "год" при выводе возраста
@@ -50,3 +69,22 @@ function getAgeDeclention(number, declention) { // определение скл
 
 
 
+
+
+
+function movePhoto1(photos, id, amount) {
+    photos.forEach(photo => {
+        
+        const idInput = photo.querySelector('input[name="id"]');
+        console.log(photo+' PHOtO FOUND')
+        console.log(idInput+' INPUT FOUND')
+        const photoCont = photo.querySelector('.pet-photo');
+        const img = photoCont.querySelector('img');
+
+        if (idInput && idInput.value == id) {
+            if (img) {
+                img.style.left = `${amount}px`;
+            }
+        }
+    });
+}

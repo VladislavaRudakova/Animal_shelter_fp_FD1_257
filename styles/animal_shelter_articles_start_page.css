@@ -12,13 +12,12 @@ div.articles>div {
     display: flex;
     gap: 40px;
     flex-wrap: nowrap;
-
 }
 
 
 a.article {    
     display: inline-block;
-   width: 300px;
+    width: 300px;
     aspect-ratio:300/417 ;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255, 0.3);
@@ -70,18 +69,11 @@ div.articleS-caption div {
 
 
 @media all and (max-width: 750px) {
-
-    a.article {     
-       /* flex: 300px 0 0; */   
+  
+    div.articles>div {        
+        justify-content: center;
+        flex-wrap: wrap;
     }
-
-
-    div.articles>div {    
-    
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
 
 }
 
@@ -91,7 +83,6 @@ div.articleS-caption div {
         flex: auto 1 1;
         width: 100%;    
     }
-
 
     div.articles>div {
         justify-content: center;

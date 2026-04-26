@@ -15,18 +15,16 @@
     <link rel="stylesheet" href="styles/chapter_title_style.css">
     <link rel="stylesheet" href="styles/pet-slider-style.css">
     <link rel="stylesheet" href="styles/pet_info_modal_style.css">
-    <title>Document</title>
+    <title id="page-title-pet-info">Cat&Dog</title>
 </head>
 <body>    
     <div id="back"></div>
-<icon-sprite></icon-sprite>
+    <icon-sprite></icon-sprite>
     <illustration-sprite></illustration-sprite>
     <div id="modal">
         <div id="modal-message">
-            <div id="modal-close"><custom-icon name="close"></custom-icon></div>
-           
-            <div id="modal-social">
-                
+            <div id="modal-close"><custom-icon name="close"></custom-icon></div>           
+            <div id="modal-social">                
                 <div id="modal-social-icons">
                     <div class="modal-social-icons" id="inst-modal"><custom-icon name="inst"></custom-icon></div>
                     <div class="modal-social-icons" id="tg-modal" ><custom-icon name="telegram"></custom-icon></div>
@@ -41,12 +39,8 @@
     
     <!--<button id="home-button"><a href="animal_shelter_start_page.html"><img src="home1.svg"></a></button>-->
     <div id="main">
-        <div id="main-first-block">
-            
-            <div class="pet-info">
-                
-
-                
+        <div id="main-first-block">            
+            <div class="pet-info"> 
                 <div>
                     <div class="main-info-block">
                         <div id="main-photo-cont"></div> <!--содержимое загружается js (pet-info-script)--> 
@@ -69,65 +63,68 @@
                                 </div>
                             </div>
 
-
                             <div id="pet-info-text"></div> <!--текст загружается js (pet-info-script)-->
                                                     
                             <div id="pet-info-buttons">
-                                <input class="pet-info-help-button" type="button" value="забрать домой">
-                                <input class="pet-info-help-button" type="button" value="помочь">
-                                <button class="share-button"><div id="share-button"><custom-icon name="share"></custom-icon></div></button>
-                            </div>
-                        
+                               <a href="animal_shelter_form_take_pet.html"><input class="pet-info-help-button" type="button" value="забрать домой"></a>
+                                <div>
+                                    <input class="pet-info-help-button" type="button" value="помочь">
+                                    <button class="share-button"><div id="share-button"><custom-icon name="share"></custom-icon></div></button>
+                               </div>
+                            </div>                        
                         </div> <!--/info-->
-
                     </div><!--/main-info-block-->
-
-                        <div class="pet-info-message">
-                            <div>Друзья, напоминаем, что передача питомца осуществляется с заключением договора, пунктом которого
-                                является отслеживание судьбы животного 
-                                <a href="">смотреть договор</a>
-                            </div>                     
-                        </div>                    
                 </div>
-            
-            <div class="pet-info-zoopsy"> Если вы берете питомца из приюта, консультация зоопсихолога в период адаптации бесплатная!
-                        <input class="pet-info-help-button" type="button" value="записаться">
+                <div class="pet-info-zoopsy"> 
+                    <div id="author-block">
+                        <div id="author-avatar"></div>
+                    </div>
+                    <div>
+                        <div>Если вы берете питомца из приюта, консультация зоопсихолога в период адаптации бесплатная!</div>
+                        <input id="pet-info-zoopsy-button" type="button" value="записаться">
+                    </div>
                 </div>
     </div><!--/pet-info--> 
 
         <div class="articles">
-            <a href="" class="article">
+            <a href="animal_shelter_article.html" class="article">
                 <div class="article-photo">
-                    <img class="article-photo" src="images/dressirovka.jpg">  
+                    <img class="article-photo" src="images/dressirovka.jpg" width="600" height="400" alt="cat_training" title="cat_training">  
                 </div>
-                <div class="article-caption"><div>поддается ли кошка дрессировке?</div></div>
+                <div class="article-caption"><div>как дрессировать кошку?</div></div>
             </a> 
             
             <a href="" class="article">
                 <div class="article-photo">
-                    <img class="article-photo" src="images/grooming.jpg">  
+                    <img class="article-photo" src="images/grooming.jpg" width="1000" height="667" alt="grooming" title="grooming">  
                 </div>
-                <div class="article-caption"><div>поддается ли кошка дрессировке?</div></div>
+                <div class="article-caption"><div>как приучить кошку к расчесыванию?</div></div>
             </a> 
 
             <a href="" class="article">
                 <div class="article-photo">
-                    <img class="article-photo" src="images/doverie.jpg">  
+                    <img class="article-photo" src="images/doverie.jpg" width="1279" height="853" alt="dog_trust" title="dog_trust">  
                 </div>
                 <div class="article-caption"><div>как вернуть доверие собаки?</div></div>
             </a> 
 
             <a href="" class="article">
                 <div class="article-photo">
-                    <img class="article-photo" src="grooming.jpg">  
+                    <img class="article-photo" src="images/vesennie_opasnosti.jpg" width="1279" height="853" alt="spring_danger" title="spring_danger">  
                 </div>
-                <div class="article-caption"><div>поддается ли кошка дрессировке?</div></div>
+                <div class="article-caption"><div>весенние опасности для кошек и собак</div></div>
             </a>
         </div>
+    </div>
 
-       </div>
 
-       
+    <div class="title">смотрите также 
+        <div class="see-all-ref">
+            <div class="text-see-all-ref"><a href="animal_shelter_all_pets.html">посмотреть всех<div id="arrow-see-all-ref"> <custom-icon name="arrow-right"></custom-icon></a></div>
+            </div> 
+        </div>   
+    </div>
+
 
     <div class="pets-slider-container" id="main-page-slider">
         <button class="slider-buttons" id="slider-button-left"><div><custom-icon name="arrow-left"></custom-icon></div></button>
@@ -139,12 +136,10 @@
         <button class="slider-buttons" id="slider-button-right"><div><custom-icon name="arrow-right"></custom-icon></div></button>
     </div>
 
-
-
-
-
     </div>
+    <button class="slider-buttons" id="scroll-top-button"><div><custom-icon name="arrow-top"></custom-icon></div></button>
     <custom-footer></custom-footer>
+    
     <script src="script/component/illustration_sprite.js"></script>
     <script src="script/component/illustration.js"></script>
     <script src="script/component/icon_sprite.js"></script>
@@ -157,28 +152,17 @@
     <script src="script/data/data.js"></script>
     <script src="script/data/pets.js"></script>
     <script src="script/data/pet_features_colors.js"></script>
-    
-    
+        
 
     <script src="script/menu_script.js"></script>
     <script src="script/find_all_pets.js"></script>    
     <script src="script/slider_script_1.js"></script>
     <script src="script/get_id_name.js"></script>    
-
     <script src="script/pet_info_script.js"></script>
     <script src="script/photo_replace_script.js"></script>
     <script src="script/pet_info_equalize_containers.js"></script>
     <script src="script/modal_script.js"></script>
-
-
-
-
-    
-   
-    
-    
-    
-    
+    <script src="script/scrollTop.js"></script>
    
 </body>
 </html>

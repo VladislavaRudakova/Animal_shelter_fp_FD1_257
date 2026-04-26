@@ -23,8 +23,22 @@ div.see-all-ref {
     align-self: end;  
 }
 
+div.text-see-all-ref {
+    display: flex;
+    align-items: center;    
+   
+}
+
+div.text-see-all-ref:hover a {
+    border-bottom: solid 1px rgb(118, 45, 0, 0.7);
+      
+   
+}
+
 div.see-all-ref a {
-    text-decoration: none;     
+    text-decoration: none;
+    border-bottom: solid 1px rgb(118, 45, 0, 0);
+     transition: 0.1s;       
 }
 
 div.see-all-ref a:visited {
@@ -73,47 +87,29 @@ div.take-friend-img.cat-tail {
     bottom: -35px;
 }
 
-@media all and (max-width: 1700px) {
-      
-   
-
+div.take-friend-img.cat-paws {
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    bottom: -20px;
 }
 
-
-@media all and (max-width: 1500px) {
-
-   
-
-}
-
-
-
-@media all and (max-width: 1300px) {
-
-
-
-}
 
 
 @media all and (max-width: 1000px) {/*-------------------------------------------*/
-div.title {
-    font-size: 200%;
-    padding: 0.5em;
-   
-}
-    
-           
+
+    div.title {
+        font-size: 200%;
+        padding: 0.5em;
+    } 
 }
 
 
 @media all and (max-width: 900px) {/*-------------------------------------------*/
-div.title {
-    font-size: 180%;
-    
-   
-}
-    
-           
+
+    div.title {
+        font-size: 180%;
+    }
 }
 
 
@@ -124,13 +120,10 @@ div.title {
     }
 
     div#take-friend-cat {
-    position: absolute;
-    bottom: 0px;
-    right: 20px;
-}
-
-
-    
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+    }
 }
 
 
@@ -141,34 +134,33 @@ div.title {
     }
 
     div#take-friend-cat {
-    transform: scale(0.9);
-}
+        transform: scale(0.9);
+    }
 
-
-    
 }
 
 
 @media all and (max-width: 600px) {
 
-   div.title {
+    div.title {
         font-size: 110%;    
     }
     
 }
 
-
 @media all and (max-width: 500px) {
 
- div.title {
+    div.title {
         font-size: 100%;    
     }
-div.see-all-ref div:first-child {
-    display: none;
-}
-   div#take-friend-cat {
-    transform: scale(0.8);
-}
+
+    div.see-all-ref div:first-child {
+        display: none;
+    }
+
+    div#take-friend-cat {
+        transform: scale(0.8);
+    }
 
 }
 

@@ -29,6 +29,7 @@ header.sub-header {
 div#main-first-block {   
     display: flex;
     justify-content: end;
+    margin-bottom: 50px;
 }
 
 div#main-first-block>div:first-child {
@@ -214,8 +215,14 @@ div#pet-info-buttons {
     display: flex;
     justify-content: space-between;
     gap: 5px;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
+}
+
+div#pet-info-buttons div:last-child {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 div#pet-info-buttons input, div#pet-info-buttons button {
@@ -223,42 +230,49 @@ div#pet-info-buttons input, div#pet-info-buttons button {
     box-sizing: border-box;
     padding: 1em 1.5em 1em 1.5em;
     border: none;  
-    outline: solid 1px rgba(177, 86, 63, 1);   
+    border: solid 1px rgba(177, 86, 63, 1);   
     background-color: rgb(255, 255, 255, 1);
     color:rgba(177, 86, 63, 1);
     font-size: 90%;
     font-weight: 600;
     text-transform: uppercase;
-    height: auto;
+    height: 100%;
     border-radius: 8px;  
 }
 
+div#pet-info-buttons a {
+   display: flex;
+   flex: auto;
+   height: auto;
+}
 
-div#pet-info-buttons input:first-child {
+div#pet-info-buttons>a input {
     flex: auto;
     box-sizing: border-box;
     padding: 1em 1.5em 1em 1.5em;  
-    outline: solid 1px rgb(118, 45, 0, 1);   
+    border: solid 1px rgba(177, 86, 63, 1);   
     background-color: rgba(177, 86, 63, 1);
-    border: none;
-    outline: none;
+   
+   
     color: rgb(255, 255, 255);
     font-size: 90%;
     text-transform: uppercase;
-    height: auto;
-    border-radius: 8px;  
+    height: 100%;
+    border-radius: 8px;
+    transition: 0.1s;  
 }
 
 div#pet-info-buttons input:first-child:hover {
-    
+    color: white;
     background-color: rgba(202, 153, 140, 0.95);
-    
+    border-color: rgba(202, 153, 140, 0.95);
     
 }
 
 div#pet-info-buttons input:not(:first-child):hover, div#pet-info-buttons button:hover  {
     
     background-color: rgba(216, 187, 179, 0.95);
+    border-color: rgba(216, 187, 179, 0.95);
     outline: none;
     color: white;
 }
@@ -330,16 +344,61 @@ div.pet-info-message a {
 
 div.pet-info-zoopsy {
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: solid 1px rgb(212, 121, 78);
-    
-    color:  rgb(212, 121, 78);
+    background-color:  rgba(141, 161, 141, 0.5);
+    border: solid 1px rgb(130, 156, 130);
+    border: none;
+    color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 40px;
+    gap: 30px;
+    font-size: 110%;
+    font-weight: 500;
+    text-transform: uppercase;    
 }
 
+div.pet-info-zoopsy>div:last-child {   
+    background-color:  rgba(255, 255, 255, 0);
+    padding: 30px;
+    border-radius: 40px;
+    flex: auto;
+    display: flex;
+    gap: 20px;
+   
+}
 
+div.pet-info-zoopsy>div:last-child  div{ 
+
+    text-align: center;
+}
+
+div#author-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    border: solid 3px white;
+    background-image: url('../images/vet.webp');
+    background-size: 170%;
+    background-position: 30% 10%;
+    margin-left: 20px;
+    border: none;
+}
+
+input#pet-info-zoopsy-button {
+    align-self: flex-end;   
+    box-sizing: border-box;
+    padding: 1em 1.5em 1em 1.5em;
+    border: none;
+    outline: solid 1px rgb(60, 80, 60);;
+    background-color:rgba(180, 190, 180, 0);;
+    color: rgb(60, 80, 60);
+    font-size: 90%;
+    font-weight: 600;
+    text-transform: uppercase;    
+    border-radius: 8px;
+}
 
 /*------------------------------------------articles*/
 
@@ -350,7 +409,7 @@ div.articles {
     flex-direction: column;
     align-items: flex-start;
     height: 1300px;
-    margin-top: 40px;
+    margin-top: 80px;
     
     overflow: auto;
 }
@@ -453,6 +512,19 @@ div.articleS-caption div {
         width: 100%;
     }
 
+    div.pet-info-zoopsy>div:last-child {   
+        flex-direction: column;
+        gap: 40px;
+        padding: 0;
+   
+}
+
+
+input#pet-info-zoopsy-button {
+    align-self: center;   
+    
+}
+
 }
 
 
@@ -491,6 +563,10 @@ div.articleS-caption div {
     font-size: 100%;
     line-height: 140%;
     padding: 20px 0 30px 0;
+}
+
+div.pet-info-zoopsy {
+    flex-direction: column;
 }
 
 }
