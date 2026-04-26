@@ -8,7 +8,7 @@ function showAllPets(petsContainer, pets) {
 pets.forEach(pet=> {
    content+=`<a href="animal_shelter_pet_info.html" class="pet">
                 <div class="pet-photo" style="background-image: url(${pet.avatarBackPhoto})">
-                    <img class="pet-photo" src="${pet.avatarPhoto}">
+                    <img class="pet-photo" src="${pet.avatarPhoto}" width="1280" height="853" alt="${pet.name}" title="${pet.name}">
                 </div>
                 <input class="pet-id" type="hidden" name="id" value="${pet.id}">
                 <div class="pet-caption name"><div class="highlight">${pet.name}</div><div><div class="age-number">${pet.age.toString()}</div> ${getAgeDeclention(pet.age, declention)} </div></div>
@@ -39,8 +39,8 @@ if (window.location.href.includes('animal_shelter_all_pets')) { // вывод в
 
     } else {
     const petsContainer = document.getElementById('slider-content');
-const photos = petsContainer.querySelectorAll('.pet');
     showAllPets(petsContainer,pets);
+    const photos = petsContainer.querySelectorAll('.pet');
      movePhoto1(photos,'2', -150);
     movePhoto1(photos,'7', -120);
 }

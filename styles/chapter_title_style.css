@@ -154,8 +154,12 @@ div.take-friend-img.cat-paws {
         font-size: 100%;    
     }
 
-    div.see-all-ref div:first-child {
+    div.text-see-all-ref>a:first-child {
         display: none;
+    }
+
+    div#arrow-see-all-ref  {
+        display: block;
     }
 
     div#take-friend-cat {

@@ -149,8 +149,9 @@ div#article-title {
     border-bottom: solid 1px #762D00;
 }
 
-img.article-images {
+div.article-cont img.article-images {
     border-radius: 15px;
+    height: auto;
     width: 100%;
 }
 
